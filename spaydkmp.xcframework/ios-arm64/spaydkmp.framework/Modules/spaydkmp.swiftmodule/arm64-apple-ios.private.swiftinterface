@@ -903,22 +903,22 @@ extension spaydkmp.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveC
 }
 #endif
 @frozen public enum Key : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
-  case date
-  case currency
+  case dueDate
+  case currencyCode
   case amount
-  case account
-  case alternateAccounts
-  case senderReference
+  case bankAccount
+  case alternativeBankAccounts
+  case referenceForRecipient
   case recipientName
   case paymentType
   case message
   case notifyType
   case notifyAddress
-  case `repeat`
+  case daysToRepeatIfUnsuccessful
   case variableSymbol
   case specificSymbol
   case constantSymbol
-  case identifier
+  case referenceForSender
   case url
   public var key: Swift.String {
     get
@@ -997,6 +997,38 @@ extension spaydkmp.NotificationType {
 }
 extension spaydkmp.__NotificationType {
   public func toSwiftEnum() -> spaydkmp.NotificationType
+}
+@frozen public enum PaymentType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case immediatePayment
+  public var key: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: spaydkmp.__PaymentType, result: inout spaydkmp.PaymentType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: spaydkmp.__PaymentType, result: inout spaydkmp.PaymentType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: spaydkmp.__PaymentType?) -> spaydkmp.PaymentType
+  public func _bridgeToObjectiveC() -> spaydkmp.__PaymentType
+  public typealias _ObjectiveCType = spaydkmp.__PaymentType
+  public static func == (a: spaydkmp.PaymentType, b: spaydkmp.PaymentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [spaydkmp.PaymentType]
+  public static var allCases: [spaydkmp.PaymentType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension spaydkmp.PaymentType {
+  public func toKotlinEnum() -> spaydkmp.__PaymentType
+}
+extension spaydkmp.__PaymentType {
+  public func toSwiftEnum() -> spaydkmp.PaymentType
 }
 @frozen public enum Kotlinx_datetimeMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
   case january
@@ -1103,6 +1135,78 @@ extension spaydkmp.Kotlinx_datetimePadding {
 }
 extension spaydkmp.__Kotlinx_datetimePadding {
   public func toSwiftEnum() -> spaydkmp.Kotlinx_datetimePadding
+}
+@frozen public enum BignumSign : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case positive
+  case negative
+  case zero
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public func not() -> spaydkmp.BignumSign
+  public func toInt() -> Swift.Int32
+  public static func _forceBridgeFromObjectiveC(_ source: spaydkmp.__BignumSign, result: inout spaydkmp.BignumSign?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: spaydkmp.__BignumSign, result: inout spaydkmp.BignumSign?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: spaydkmp.__BignumSign?) -> spaydkmp.BignumSign
+  public func _bridgeToObjectiveC() -> spaydkmp.__BignumSign
+  public typealias _ObjectiveCType = spaydkmp.__BignumSign
+  public static func == (a: spaydkmp.BignumSign, b: spaydkmp.BignumSign) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [spaydkmp.BignumSign]
+  public static var allCases: [spaydkmp.BignumSign] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension spaydkmp.BignumSign {
+  public func toKotlinEnum() -> spaydkmp.__BignumSign
+}
+extension spaydkmp.__BignumSign {
+  public func toSwiftEnum() -> spaydkmp.BignumSign
+}
+@frozen public enum BignumRoundingMode : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case floor
+  case ceiling
+  case awayFromZero
+  case towardsZero
+  case none
+  case roundHalfAwayFromZero
+  case roundHalfTowardsZero
+  case roundHalfCeiling
+  case roundHalfFloor
+  case roundHalfToEven
+  case roundHalfToOdd
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: spaydkmp.__BignumRoundingMode, result: inout spaydkmp.BignumRoundingMode?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: spaydkmp.__BignumRoundingMode, result: inout spaydkmp.BignumRoundingMode?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: spaydkmp.__BignumRoundingMode?) -> spaydkmp.BignumRoundingMode
+  public func _bridgeToObjectiveC() -> spaydkmp.__BignumRoundingMode
+  public typealias _ObjectiveCType = spaydkmp.__BignumRoundingMode
+  public static func == (a: spaydkmp.BignumRoundingMode, b: spaydkmp.BignumRoundingMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [spaydkmp.BignumRoundingMode]
+  public static var allCases: [spaydkmp.BignumRoundingMode] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension spaydkmp.BignumRoundingMode {
+  public func toKotlinEnum() -> spaydkmp.__BignumRoundingMode
+}
+extension spaydkmp.__BignumRoundingMode {
+  public func toSwiftEnum() -> spaydkmp.BignumRoundingMode
 }
 extension spaydkmp.Skie.RuntimeKotlin.Skie_SuspendResult {
   @frozen public enum __Sealed : Swift.Hashable {
@@ -1262,9 +1366,12 @@ public func onEnum<__Sealed>(of sealed: __Sealed) -> spaydkmp.Skie.KotlinxSerial
 @_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> spaydkmp.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : spaydkmp.Kotlinx_serialization_coreStructureKind
 extension spaydkmp.Key : Swift.Sendable {}
 extension spaydkmp.NotificationType : Swift.Sendable {}
+extension spaydkmp.PaymentType : Swift.Sendable {}
 extension spaydkmp.Kotlinx_datetimeMonth : Swift.Sendable {}
 extension spaydkmp.Kotlinx_datetimeDayOfWeek : Swift.Sendable {}
 extension spaydkmp.Kotlinx_datetimePadding : Swift.Sendable {}
+extension spaydkmp.BignumSign : Swift.Sendable {}
+extension spaydkmp.BignumRoundingMode : Swift.Sendable {}
 extension spaydkmp.Skie.KotlinxDatetime.DateTimeFormat.__Sealed : Swift.Sendable {}
 extension spaydkmp.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed : Swift.Sendable {}
 extension spaydkmp.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}

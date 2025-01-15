@@ -307,6 +307,62 @@ Classes:
   SwiftName: "KotlinEnumCompanion"
 - Name: "SpaydkmpKotlinNothing"
   SwiftName: "KotlinNothing"
+- Name: "SpaydkmpKotlinByteArray"
+  SwiftName: "KotlinByteArray"
+  Properties:
+  - Name: "size"
+    PropertyKind: "Instance"
+    SwiftName: "size"
+    Type: "int32_t"
+  Methods:
+  - Selector: "arrayWithSize:"
+    MethodKind: "Instance"
+    SwiftName: "init(size:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "arrayWithSize:init:"
+    MethodKind: "Instance"
+    SwiftName: "init(size:init:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "SpaydkmpByte * _Nonnull (^ _Nonnull)(SpaydkmpInt * _Nonnull)"
+  - Selector: "getIndex:"
+    MethodKind: "Instance"
+    SwiftName: "get(index:)"
+    ResultType: "int8_t"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "iterator"
+    MethodKind: "Instance"
+    SwiftName: "iterator()"
+    ResultType: "SpaydkmpKotlinByteIterator * _Nonnull"
+  - Selector: "setIndex:value:"
+    MethodKind: "Instance"
+    SwiftName: "set(index:value:)"
+    ResultType: "void"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int8_t"
+- Name: "SpaydkmpKotlinByteIterator"
+  SwiftName: "KotlinByteIterator"
+  Methods:
+  - Selector: "init"
+    MethodKind: "Instance"
+    SwiftName: "init()"
+  - Selector: "next"
+    MethodKind: "Instance"
+    SwiftName: "next()"
+    ResultType: "SpaydkmpByte * _Nonnull"
+  - Selector: "nextByte"
+    MethodKind: "Instance"
+    SwiftName: "nextByte()"
+    ResultType: "int8_t"
 - Name: "SpaydkmpKotlinCharArray"
   SwiftName: "KotlinCharArray"
   Properties:
@@ -887,18 +943,18 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSDictionary<SpaydkmpKey *, id> * _Nonnull"
-  - Selector: "initWithAccount:alternateAccounts:currency:amount:date:senderReference:recipientName:paymentType:message:notificationType:notificationAddress:repeat:variableSymbol:specificSymbol:constantSymbol:identifier:url:"
+  - Selector: "initWithBankAccount:alternativeBankAccounts:currencyCode:amount:dueDate:referenceForRecipient:recipientName:paymentType:message:notificationType:notificationAddress:daysToRepeatIfUnsuccessfull:variableSymbol:specificSymbol:constantSymbol:referenceForSender:url:"
     MethodKind: "Instance"
-    SwiftName: "init(account:alternateAccounts:currency:amount:date:senderReference:recipientName:paymentType:message:notificationType:notificationAddress:repeat:variableSymbol:specificSymbol:constantSymbol:identifier:url:)"
+    SwiftName: "init(bankAccount:alternativeBankAccounts:currencyCode:amount:dueDate:referenceForRecipient:recipientName:paymentType:message:notificationType:notificationAddress:daysToRepeatIfUnsuccessfull:variableSymbol:specificSymbol:constantSymbol:referenceForSender:url:)"
     Parameters:
     - Position: 0
-      Type: "SpaydkmpAccount * _Nonnull"
+      Type: "SpaydkmpBankAccount * _Nonnull"
     - Position: 1
-      Type: "SpaydkmpAccountList * _Nullable"
+      Type: "SpaydkmpBankAccountList * _Nullable"
     - Position: 2
       Type: "NSString * _Nullable"
     - Position: 3
-      Type: "SpaydkmpDouble * _Nullable"
+      Type: "SpaydkmpBignumBigDecimal * _Nullable"
     - Position: 4
       Type: "SpaydkmpKotlinx_datetimeLocalDate * _Nullable"
     - Position: 5
@@ -906,7 +962,7 @@ Classes:
     - Position: 6
       Type: "NSString * _Nullable"
     - Position: 7
-      Type: "NSString * _Nullable"
+      Type: "SpaydkmpPaymentType * _Nullable"
     - Position: 8
       Type: "NSString * _Nullable"
     - Position: 9
@@ -975,29 +1031,29 @@ Classes:
     PropertyKind: "Instance"
     SwiftName: "type"
     Type: "id<SpaydkmpKotlinKClass> _Nonnull"
-  - Name: "date"
+  - Name: "dueDate"
     PropertyKind: "Class"
-    SwiftName: "date"
+    SwiftName: "dueDate"
     Type: "SpaydkmpKey * _Nonnull"
-  - Name: "currency"
+  - Name: "currencyCode"
     PropertyKind: "Class"
-    SwiftName: "currency"
+    SwiftName: "currencyCode"
     Type: "SpaydkmpKey * _Nonnull"
   - Name: "amount"
     PropertyKind: "Class"
     SwiftName: "amount"
     Type: "SpaydkmpKey * _Nonnull"
-  - Name: "account"
+  - Name: "bankAccount"
     PropertyKind: "Class"
-    SwiftName: "account"
+    SwiftName: "bankAccount"
     Type: "SpaydkmpKey * _Nonnull"
-  - Name: "alternateAccounts"
+  - Name: "alternativeBankAccounts"
     PropertyKind: "Class"
-    SwiftName: "alternateAccounts"
+    SwiftName: "alternativeBankAccounts"
     Type: "SpaydkmpKey * _Nonnull"
-  - Name: "senderReference"
+  - Name: "referenceForRecipient"
     PropertyKind: "Class"
-    SwiftName: "senderReference"
+    SwiftName: "referenceForRecipient"
     Type: "SpaydkmpKey * _Nonnull"
   - Name: "recipientName"
     PropertyKind: "Class"
@@ -1019,9 +1075,9 @@ Classes:
     PropertyKind: "Class"
     SwiftName: "notifyAddress"
     Type: "SpaydkmpKey * _Nonnull"
-  - Name: "repeat"
+  - Name: "daysToRepeatIfUnsuccessful"
     PropertyKind: "Class"
-    SwiftName: "repeat"
+    SwiftName: "daysToRepeatIfUnsuccessful"
     Type: "SpaydkmpKey * _Nonnull"
   - Name: "variableSymbol"
     PropertyKind: "Class"
@@ -1035,9 +1091,9 @@ Classes:
     PropertyKind: "Class"
     SwiftName: "constantSymbol"
     Type: "SpaydkmpKey * _Nonnull"
-  - Name: "identifier"
+  - Name: "referenceForSender"
     PropertyKind: "Class"
-    SwiftName: "identifier"
+    SwiftName: "referenceForSender"
     Type: "SpaydkmpKey * _Nonnull"
   - Name: "url"
     PropertyKind: "Class"
@@ -1074,27 +1130,49 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "init(name:ordinal:)"
     Availability: "nonswift"
-- Name: "SpaydkmpAccountList"
-  SwiftName: "AccountList"
+- Name: "SpaydkmpPaymentType"
+  SwiftBridge: "PaymentType"
+  SwiftName: "__PaymentType"
+  SwiftPrivate: true
   Properties:
-  - Name: "accounts"
+  - Name: "key"
     PropertyKind: "Instance"
-    SwiftName: "accounts"
-    Type: "NSArray<SpaydkmpAccount *> * _Nonnull"
+    SwiftName: "key"
+    Type: "NSString * _Nonnull"
+  - Name: "immediatePayment"
+    PropertyKind: "Class"
+    SwiftName: "immediatePayment"
+    Type: "SpaydkmpPaymentType * _Nonnull"
   Methods:
-  - Selector: "initWithAccounts:"
+  - Selector: "description"
     MethodKind: "Instance"
-    SwiftName: "init(accounts:)"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "SpaydkmpBankAccountList"
+  SwiftName: "BankAccountList"
+  Properties:
+  - Name: "bankAccounts"
+    PropertyKind: "Instance"
+    SwiftName: "bankAccounts"
+    Type: "NSArray<SpaydkmpBankAccount *> * _Nonnull"
+  Methods:
+  - Selector: "initWithBankAccounts:"
+    MethodKind: "Instance"
+    SwiftName: "init(bankAccounts:)"
     Parameters:
     - Position: 0
-      Type: "NSArray<SpaydkmpAccount *> * _Nonnull"
-  - Selector: "doCopyAccounts:"
+      Type: "NSArray<SpaydkmpBankAccount *> * _Nonnull"
+  - Selector: "doCopyBankAccounts:"
     MethodKind: "Instance"
-    SwiftName: "doCopy(accounts:)"
-    ResultType: "SpaydkmpAccountList * _Nonnull"
+    SwiftName: "doCopy(bankAccounts:)"
+    ResultType: "SpaydkmpBankAccountList * _Nonnull"
     Parameters:
     - Position: 0
-      Type: "NSArray<SpaydkmpAccount *> * _Nonnull"
+      Type: "NSArray<SpaydkmpBankAccount *> * _Nonnull"
   - Selector: "isEqual:"
     MethodKind: "Instance"
     SwiftName: "isEqual(_:)"
@@ -1110,8 +1188,8 @@ Classes:
     MethodKind: "Instance"
     SwiftName: "description()"
     ResultType: "NSString * _Nonnull"
-- Name: "SpaydkmpAccount"
-  SwiftName: "Account"
+- Name: "SpaydkmpBankAccount"
+  SwiftName: "BankAccount"
   Properties:
   - Name: "bic"
     PropertyKind: "Instance"
@@ -1143,7 +1221,7 @@ Classes:
   - Selector: "doCopyIban:bic:"
     MethodKind: "Instance"
     SwiftName: "doCopy(iban:bic:)"
-    ResultType: "SpaydkmpAccount * _Nonnull"
+    ResultType: "SpaydkmpBankAccount * _Nonnull"
     Parameters:
     - Position: 0
       Type: "NSString * _Nonnull"
@@ -1195,6 +1273,10 @@ Classes:
     Parameters:
     - Position: 0
       Type: "NSString * _Nullable"
+  - Selector: "initWithCause:"
+    MethodKind: "Instance"
+    SwiftName: "init(cause:)"
+    Availability: "nonswift"
   - Selector: "init"
     MethodKind: "Instance"
     SwiftName: "init()"
@@ -1202,10 +1284,6 @@ Classes:
   - Selector: "initWithMessage:cause:"
     MethodKind: "Instance"
     SwiftName: "init(message:cause:)"
-    Availability: "nonswift"
-  - Selector: "initWithCause:"
-    MethodKind: "Instance"
-    SwiftName: "init(cause:)"
     Availability: "nonswift"
 - Name: "SpaydkmpBuffer"
   SwiftName: "Buffer"
@@ -1937,6 +2015,1970 @@ Classes:
   SwiftName: "Kotlinx_serialization_coreStructureKind.MAP"
 - Name: "SpaydkmpKotlinx_serialization_coreStructureKindOBJECT"
   SwiftName: "Kotlinx_serialization_coreStructureKind.OBJECT"
+- Name: "SpaydkmpBignumBigDecimal"
+  SwiftName: "BignumBigDecimal"
+  Properties:
+  - Name: "decimalMode"
+    PropertyKind: "Instance"
+    SwiftName: "decimalMode"
+    Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Name: "exponent"
+    PropertyKind: "Instance"
+    SwiftName: "exponent"
+    Type: "int64_t"
+  - Name: "precision"
+    PropertyKind: "Instance"
+    SwiftName: "precision"
+    Type: "int64_t"
+  - Name: "precisionLimit"
+    PropertyKind: "Instance"
+    SwiftName: "precisionLimit"
+    Type: "int64_t"
+  - Name: "roundingMode"
+    PropertyKind: "Instance"
+    SwiftName: "roundingMode"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "scale"
+    PropertyKind: "Instance"
+    SwiftName: "scale"
+    Type: "int64_t"
+  - Name: "significand"
+    PropertyKind: "Instance"
+    SwiftName: "significand"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Name: "usingScale"
+    PropertyKind: "Instance"
+    SwiftName: "usingScale"
+    Type: "BOOL"
+  Methods:
+  - Selector: "abs"
+    MethodKind: "Instance"
+    SwiftName: "abs()"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "addOther:"
+    MethodKind: "Instance"
+    SwiftName: "add(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "addOther:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "add(other:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "byteValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "byteValue(exactRequired:)"
+    ResultType: "int8_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "ceil"
+    MethodKind: "Instance"
+    SwiftName: "ceil()"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "compareOther:"
+    MethodKind: "Instance"
+    SwiftName: "compare(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "compareToOther_:"
+    MethodKind: "Instance"
+    SwiftName: "compareTo(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id _Nonnull"
+  - Selector: "doCopySignificand:exponent:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(significand:exponent:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "dec"
+    MethodKind: "Instance"
+    SwiftName: "dec()"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "divOther:"
+    MethodKind: "Instance"
+    SwiftName: "div(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "divideOther:"
+    MethodKind: "Instance"
+    SwiftName: "divide(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "divideOther:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "divide(other:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "divideAndRemainderOther:"
+    MethodKind: "Instance"
+    SwiftName: "divideAndRemainder(other:)"
+    ResultType: "SpaydkmpKotlinPair<SpaydkmpBignumBigDecimal *, SpaydkmpBignumBigDecimal *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "divremOther:"
+    MethodKind: "Instance"
+    SwiftName: "divrem(other:)"
+    ResultType: "SpaydkmpKotlinPair<SpaydkmpBignumBigDecimal *, SpaydkmpBignumBigDecimal *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "doubleValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "doubleValue(exactRequired:)"
+    ResultType: "double"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "floatValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "floatValue(exactRequired:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "floor"
+    MethodKind: "Instance"
+    SwiftName: "floor()"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "getCreator"
+    MethodKind: "Instance"
+    SwiftName: "getCreator()"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+  - Selector: "getInstance"
+    MethodKind: "Instance"
+    SwiftName: "getInstance()"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "inc"
+    MethodKind: "Instance"
+    SwiftName: "inc()"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "intValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "intValue(exactRequired:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "isWholeNumber"
+    MethodKind: "Instance"
+    SwiftName: "isWholeNumber()"
+    ResultType: "BOOL"
+  - Selector: "isZero"
+    MethodKind: "Instance"
+    SwiftName: "isZero()"
+    ResultType: "BOOL"
+  - Selector: "longValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "longValue(exactRequired:)"
+    ResultType: "int64_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "minusOther:"
+    MethodKind: "Instance"
+    SwiftName: "minus(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "moveDecimalPointPlaces:"
+    MethodKind: "Instance"
+    SwiftName: "moveDecimalPoint(places:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "moveDecimalPointPlaces_:"
+    MethodKind: "Instance"
+    SwiftName: "moveDecimalPoint(places:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "multiplyOther:"
+    MethodKind: "Instance"
+    SwiftName: "multiply(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "multiplyOther:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "multiply(other:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "negate"
+    MethodKind: "Instance"
+    SwiftName: "negate()"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "numberOfDecimalDigits"
+    MethodKind: "Instance"
+    SwiftName: "numberOfDecimalDigits()"
+    ResultType: "int64_t"
+  - Selector: "plusOther:"
+    MethodKind: "Instance"
+    SwiftName: "plus(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "powExponent:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "powExponent_:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "remOther:"
+    MethodKind: "Instance"
+    SwiftName: "rem(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "remainderOther:"
+    MethodKind: "Instance"
+    SwiftName: "remainder(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "removeScale"
+    MethodKind: "Instance"
+    SwiftName: "removeScale()"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "roundSignificandDecimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "roundSignificand(decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "roundToDigitPositionDigitPosition:roundingMode:"
+    MethodKind: "Instance"
+    SwiftName: "roundToDigitPosition(digitPosition:roundingMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Selector: "roundToDigitPositionAfterDecimalPointDigitPosition:roundingMode:"
+    MethodKind: "Instance"
+    SwiftName: "roundToDigitPositionAfterDecimalPoint(digitPosition:roundingMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Selector: "scaleScale:"
+    MethodKind: "Instance"
+    SwiftName: "scale(scale:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "secureOverwrite"
+    MethodKind: "Instance"
+    SwiftName: "secureOverwrite()"
+    ResultType: "void"
+  - Selector: "shortValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "shortValue(exactRequired:)"
+    ResultType: "int16_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "signum"
+    MethodKind: "Instance"
+    SwiftName: "signum()"
+    ResultType: "int32_t"
+  - Selector: "subtractOther:"
+    MethodKind: "Instance"
+    SwiftName: "subtract(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "subtractOther:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "subtract(other:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "timesOther:"
+    MethodKind: "Instance"
+    SwiftName: "times(other:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "toBigInteger"
+    MethodKind: "Instance"
+    SwiftName: "toBigInteger()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "toPlainString"
+    MethodKind: "Instance"
+    SwiftName: "toPlainString()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "toStringBase:"
+    MethodKind: "Instance"
+    SwiftName: "toString(base:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "toStringExpanded"
+    MethodKind: "Instance"
+    SwiftName: "toStringExpanded()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "ubyteValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "ubyteValue(exactRequired:)"
+    ResultType: "uint8_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "uintValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "uintValue(exactRequired:)"
+    ResultType: "uint32_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "ulongValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "ulongValue(exactRequired:)"
+    ResultType: "uint64_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "unaryMinus"
+    MethodKind: "Instance"
+    SwiftName: "unaryMinus()"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Selector: "ushortValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "ushortValue(exactRequired:)"
+    ResultType: "uint16_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "times:char:"
+    MethodKind: "Instance"
+    SwiftName: "times(_:char:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "unichar"
+  - Selector: "compareToOther:"
+    MethodKind: "Instance"
+    SwiftName: "compareTo(other:)"
+    Availability: "nonswift"
+    ResultType: "int32_t"
+- Name: "SpaydkmpBignumBigDecimalCompanion"
+  SwiftName: "BignumBigDecimal.Companion"
+  Properties:
+  - Name: "ONE"
+    PropertyKind: "Instance"
+    SwiftName: "ONE"
+    Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Name: "TEN"
+    PropertyKind: "Instance"
+    SwiftName: "TEN"
+    Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Name: "TWO"
+    PropertyKind: "Instance"
+    SwiftName: "TWO"
+    Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Name: "ZERO"
+    PropertyKind: "Instance"
+    SwiftName: "ZERO"
+    Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+  - Name: "useToStringExpanded"
+    PropertyKind: "Instance"
+    SwiftName: "useToStringExpanded"
+    Type: "BOOL"
+  Methods:
+  - Selector: "fromBigDecimalBigDecimal:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromBigDecimal(bigDecimal:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigDecimal * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromBigIntegerBigInteger:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromBigInteger(bigInteger:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromBigIntegerBigInteger:"
+    MethodKind: "Instance"
+    SwiftName: "fromBigInteger(bigInteger:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "fromBigIntegerWithExponentBigInteger:exponent:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromBigIntegerWithExponent(bigInteger:exponent:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromByteByte:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromByte(byte:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromByteByte:"
+    MethodKind: "Instance"
+    SwiftName: "fromByte(byte:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+  - Selector: "fromByteAsSignificandByte:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromByteAsSignificand(byte:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromByteWithExponentByte:exponent:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromByteWithExponent(byte:exponent:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromDoubleDouble:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromDouble(double:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "double"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromFloatFloat:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromFloat(float:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromIntInt:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromInt(int:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromIntInt:"
+    MethodKind: "Instance"
+    SwiftName: "fromInt(int:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "fromIntAsSignificandInt:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromIntAsSignificand(int:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromIntWithExponentInt:exponent:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromIntWithExponent(int:exponent:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromLongLong:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromLong(long:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromLongLong:"
+    MethodKind: "Instance"
+    SwiftName: "fromLong(long:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "fromLongAsSignificandLong:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromLongAsSignificand(long:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromLongWithExponentLong:exponent:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromLongWithExponent(long:exponent:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromShortShort:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromShort(short:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromShortShort:"
+    MethodKind: "Instance"
+    SwiftName: "fromShort(short:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+  - Selector: "fromShortAsSignificandShort:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromShortAsSignificand(short:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromShortWithExponentShort:exponent:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromShortWithExponent(short:exponent:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromUByteUByte:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromUByte(uByte:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint8_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromUByteUByte:"
+    MethodKind: "Instance"
+    SwiftName: "fromUByte(uByte:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint8_t"
+  - Selector: "fromUIntUInt:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromUInt(uInt:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint32_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromUIntUInt:"
+    MethodKind: "Instance"
+    SwiftName: "fromUInt(uInt:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint32_t"
+  - Selector: "fromULongULong:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromULong(uLong:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint64_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromULongULong:"
+    MethodKind: "Instance"
+    SwiftName: "fromULong(uLong:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint64_t"
+  - Selector: "fromUShortUShort:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "fromUShort(uShort:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint16_t"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "fromUShortUShort:"
+    MethodKind: "Instance"
+    SwiftName: "fromUShort(uShort:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint16_t"
+  - Selector: "handleZeroRoundingSignificand:exponent:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "handleZeroRounding(significand:exponent:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "int64_t"
+    - Position: 2
+      Type: "SpaydkmpBignumDecimalMode * _Nonnull"
+  - Selector: "parseStringString:base:"
+    MethodKind: "Instance"
+    SwiftName: "parseString(string:base:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "parseStringString:"
+    MethodKind: "Instance"
+    SwiftName: "parseString(string:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+  - Selector: "parseStringWithModeFloatingPointString:decimalMode:"
+    MethodKind: "Instance"
+    SwiftName: "parseStringWithMode(floatingPointString:decimalMode:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumDecimalMode * _Nullable"
+  - Selector: "tryFromDoubleDouble:exactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "tryFromDouble(double:exactRequired:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "double"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "tryFromFloatFloat:exactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "tryFromFloat(float:exactRequired:)"
+    ResultType: "SpaydkmpBignumBigDecimal * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "BOOL"
+- Name: "SpaydkmpBignumBigInteger"
+  SwiftName: "BignumBigInteger"
+  Properties:
+  - Name: "numberOfWords"
+    PropertyKind: "Instance"
+    SwiftName: "numberOfWords"
+    Type: "int32_t"
+  - Name: "stringRepresentation"
+    PropertyKind: "Instance"
+    SwiftName: "stringRepresentation"
+    Type: "NSString * _Nullable"
+  Methods:
+  - Selector: "initWithLong:"
+    MethodKind: "Instance"
+    SwiftName: "init(long:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "initWithInt:"
+    MethodKind: "Instance"
+    SwiftName: "init(int:)"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "initWithShort:"
+    MethodKind: "Instance"
+    SwiftName: "init(short:)"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+  - Selector: "initWithByte:"
+    MethodKind: "Instance"
+    SwiftName: "init(byte:)"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+  - Selector: "abs"
+    MethodKind: "Instance"
+    SwiftName: "abs()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "addOther:"
+    MethodKind: "Instance"
+    SwiftName: "add(other:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "andOther:"
+    MethodKind: "Instance"
+    SwiftName: "and(other:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "bitAtPosition:"
+    MethodKind: "Instance"
+    SwiftName: "bitAt(position:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "bitLength"
+    MethodKind: "Instance"
+    SwiftName: "bitLength()"
+    ResultType: "int32_t"
+  - Selector: "byteValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "byteValue(exactRequired:)"
+    ResultType: "int8_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "compareOther:"
+    MethodKind: "Instance"
+    SwiftName: "compare(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "compareDoubleAndBigIntDouble:comparisonBlock:"
+    MethodKind: "Instance"
+    SwiftName: "compareDoubleAndBigInt(double:comparisonBlock:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "double"
+    - Position: 1
+      Type: "SpaydkmpInt * _Nonnull (^ _Nonnull)(SpaydkmpBignumBigInteger * _Nonnull)"
+  - Selector: "compareFloatAndBigIntFloat:comparisonBlock:"
+    MethodKind: "Instance"
+    SwiftName: "compareFloatAndBigInt(float:comparisonBlock:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "SpaydkmpInt * _Nonnull (^ _Nonnull)(SpaydkmpBignumBigInteger * _Nonnull)"
+  - Selector: "compareToOther_:"
+    MethodKind: "Instance"
+    SwiftName: "compareTo(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id _Nonnull"
+  - Selector: "dec"
+    MethodKind: "Instance"
+    SwiftName: "dec()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "divideOther:"
+    MethodKind: "Instance"
+    SwiftName: "divide(other:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "divideAndRemainderOther:"
+    MethodKind: "Instance"
+    SwiftName: "divideAndRemainder(other:)"
+    ResultType: "SpaydkmpKotlinPair<SpaydkmpBignumBigInteger *, SpaydkmpBignumBigInteger *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "divremOther:"
+    MethodKind: "Instance"
+    SwiftName: "divrem(other:)"
+    ResultType: "SpaydkmpBignumBigIntegerQuotientAndRemainder * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "doubleValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "doubleValue(exactRequired:)"
+    ResultType: "double"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "factorial"
+    MethodKind: "Instance"
+    SwiftName: "factorial()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "floatValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "floatValue(exactRequired:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "gcdOther:"
+    MethodKind: "Instance"
+    SwiftName: "gcd(other:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "getBackingArrayCopy"
+    MethodKind: "Instance"
+    SwiftName: "getBackingArrayCopy()"
+    ResultType: "id _Nonnull"
+  - Selector: "getCreator"
+    MethodKind: "Instance"
+    SwiftName: "getCreator()"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+  - Selector: "getInstance"
+    MethodKind: "Instance"
+    SwiftName: "getInstance()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "getSign"
+    MethodKind: "Instance"
+    SwiftName: "getSign()"
+    ResultType: "SpaydkmpBignumSign * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "inc"
+    MethodKind: "Instance"
+    SwiftName: "inc()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "intValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "intValue(exactRequired:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "isZero"
+    MethodKind: "Instance"
+    SwiftName: "isZero()"
+    ResultType: "BOOL"
+  - Selector: "longValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "longValue(exactRequired:)"
+    ResultType: "int64_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "modModulo:"
+    MethodKind: "Instance"
+    SwiftName: "mod(modulo:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "modInverseModulo:"
+    MethodKind: "Instance"
+    SwiftName: "modInverse(modulo:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "multiplyOther:"
+    MethodKind: "Instance"
+    SwiftName: "multiply(other:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "negate"
+    MethodKind: "Instance"
+    SwiftName: "negate()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "not"
+    MethodKind: "Instance"
+    SwiftName: "not()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "numberOfDecimalDigits"
+    MethodKind: "Instance"
+    SwiftName: "numberOfDecimalDigits()"
+    ResultType: "int64_t"
+  - Selector: "orOther:"
+    MethodKind: "Instance"
+    SwiftName: "or(other:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "powExponent__:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "powExponent_:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "powExponent:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "rangeToOther:"
+    MethodKind: "Instance"
+    SwiftName: "rangeTo(other:)"
+    ResultType: "SpaydkmpBignumBigIntegerBigIntegerRange * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "remainderOther:"
+    MethodKind: "Instance"
+    SwiftName: "remainder(other:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "secureOverwrite"
+    MethodKind: "Instance"
+    SwiftName: "secureOverwrite()"
+    ResultType: "void"
+  - Selector: "setBitAtPosition:bit:"
+    MethodKind: "Instance"
+    SwiftName: "setBitAt(position:bit:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "shlPlaces:"
+    MethodKind: "Instance"
+    SwiftName: "shl(places:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "shortValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "shortValue(exactRequired:)"
+    ResultType: "int16_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "shrPlaces:"
+    MethodKind: "Instance"
+    SwiftName: "shr(places:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "signum"
+    MethodKind: "Instance"
+    SwiftName: "signum()"
+    ResultType: "int32_t"
+  - Selector: "sqrt"
+    MethodKind: "Instance"
+    SwiftName: "sqrt()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "sqrtAndRemainder"
+    MethodKind: "Instance"
+    SwiftName: "sqrtAndRemainder()"
+    ResultType: "SpaydkmpBignumBigIntegerSqareRootAndRemainder * _Nonnull"
+  - Selector: "subtractOther:"
+    MethodKind: "Instance"
+    SwiftName: "subtract(other:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "timesChar:"
+    MethodKind: "Instance"
+    SwiftName: "times(char:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "unichar"
+  - Selector: "toByteArray"
+    MethodKind: "Instance"
+    SwiftName: "toByteArray()"
+    ResultType: "SpaydkmpKotlinByteArray * _Nonnull"
+  - Selector: "toModularBigIntegerModulo:"
+    MethodKind: "Instance"
+    SwiftName: "toModularBigInteger(modulo:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "toStringBase:"
+    MethodKind: "Instance"
+    SwiftName: "toString(base:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "toUByteArray"
+    MethodKind: "Instance"
+    SwiftName: "toUByteArray()"
+    ResultType: "id _Nonnull"
+  - Selector: "ubyteValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "ubyteValue(exactRequired:)"
+    ResultType: "uint8_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "uintValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "uintValue(exactRequired:)"
+    ResultType: "uint32_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "ulongValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "ulongValue(exactRequired:)"
+    ResultType: "uint64_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "unaryMinus"
+    MethodKind: "Instance"
+    SwiftName: "unaryMinus()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "ushortValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "ushortValue(exactRequired:)"
+    ResultType: "uint16_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "xorOther:"
+    MethodKind: "Instance"
+    SwiftName: "xor(other:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "compareToOther:"
+    MethodKind: "Instance"
+    SwiftName: "compareTo(other:)"
+    Availability: "nonswift"
+    ResultType: "int32_t"
+- Name: "SpaydkmpBignumBigIntegerSqareRootAndRemainder"
+  SwiftName: "BignumBigInteger.SqareRootAndRemainder"
+  Properties:
+  - Name: "remainder"
+    PropertyKind: "Instance"
+    SwiftName: "remainder"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Name: "squareRoot"
+    PropertyKind: "Instance"
+    SwiftName: "squareRoot"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  Methods:
+  - Selector: "initWithSquareRoot:remainder:"
+    MethodKind: "Instance"
+    SwiftName: "init(squareRoot:remainder:)"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "doCopySquareRoot:remainder:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(squareRoot:remainder:)"
+    ResultType: "SpaydkmpBignumBigIntegerSqareRootAndRemainder * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SpaydkmpBignumBigIntegerBigIntegerRange"
+  SwiftName: "BignumBigInteger.BigIntegerRange"
+  Properties:
+  - Name: "endInclusive"
+    PropertyKind: "Instance"
+    SwiftName: "endInclusive"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Name: "start"
+    PropertyKind: "Instance"
+    SwiftName: "start"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  Methods:
+  - Selector: "initWithStart:endInclusive:"
+    MethodKind: "Instance"
+    SwiftName: "init(start:endInclusive:)"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "iterator"
+    MethodKind: "Instance"
+    SwiftName: "iterator()"
+    ResultType: "id<SpaydkmpKotlinIterator> _Nonnull"
+- Name: "SpaydkmpBignumBigIntegerQuotientAndRemainder"
+  SwiftName: "BignumBigInteger.QuotientAndRemainder"
+  Properties:
+  - Name: "quotient"
+    PropertyKind: "Instance"
+    SwiftName: "quotient"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Name: "remainder"
+    PropertyKind: "Instance"
+    SwiftName: "remainder"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  Methods:
+  - Selector: "initWithQuotient:remainder:"
+    MethodKind: "Instance"
+    SwiftName: "init(quotient:remainder:)"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "doCopyQuotient:remainder:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(quotient:remainder:)"
+    ResultType: "SpaydkmpBignumBigIntegerQuotientAndRemainder * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SpaydkmpBignumBigIntegerCompanion"
+  SwiftName: "BignumBigInteger.Companion"
+  Properties:
+  - Name: "LOG_10_OF_2"
+    PropertyKind: "Instance"
+    SwiftName: "LOG_10_OF_2"
+    Type: "double"
+  - Name: "ONE"
+    PropertyKind: "Instance"
+    SwiftName: "ONE"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Name: "TEN"
+    PropertyKind: "Instance"
+    SwiftName: "TEN"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Name: "TWO"
+    PropertyKind: "Instance"
+    SwiftName: "TWO"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Name: "ZERO"
+    PropertyKind: "Instance"
+    SwiftName: "ZERO"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  Methods:
+  - Selector: "createFromWordArrayWordArray:requestedSign:"
+    MethodKind: "Instance"
+    SwiftName: "createFromWordArray(wordArray:requestedSign:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumSign * _Nonnull"
+  - Selector: "fromBigIntegerBigInteger:"
+    MethodKind: "Instance"
+    SwiftName: "fromBigInteger(bigInteger:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "fromByteByte:"
+    MethodKind: "Instance"
+    SwiftName: "fromByte(byte:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+  - Selector: "fromByteArraySource:sign:"
+    MethodKind: "Instance"
+    SwiftName: "fromByteArray(source:sign:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpKotlinByteArray * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumSign * _Nonnull"
+  - Selector: "fromIntInt:"
+    MethodKind: "Instance"
+    SwiftName: "fromInt(int:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "fromLongLong:"
+    MethodKind: "Instance"
+    SwiftName: "fromLong(long:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "fromShortShort:"
+    MethodKind: "Instance"
+    SwiftName: "fromShort(short:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+  - Selector: "fromUByteUByte:"
+    MethodKind: "Instance"
+    SwiftName: "fromUByte(uByte:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint8_t"
+  - Selector: "fromUByteArraySource:sign:"
+    MethodKind: "Instance"
+    SwiftName: "fromUByteArray(source:sign:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumSign * _Nonnull"
+  - Selector: "fromUIntUInt:"
+    MethodKind: "Instance"
+    SwiftName: "fromUInt(uInt:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint32_t"
+  - Selector: "fromULongULong:"
+    MethodKind: "Instance"
+    SwiftName: "fromULong(uLong:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint64_t"
+  - Selector: "fromUShortUShort:"
+    MethodKind: "Instance"
+    SwiftName: "fromUShort(uShort:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint16_t"
+  - Selector: "maxFirst:second:"
+    MethodKind: "Instance"
+    SwiftName: "max(first:second:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "minFirst:second:"
+    MethodKind: "Instance"
+    SwiftName: "min(first:second:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "parseStringString:base:"
+    MethodKind: "Instance"
+    SwiftName: "parseString(string:base:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "tryFromDoubleDouble:exactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "tryFromDouble(double:exactRequired:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "double"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "tryFromFloatFloat:exactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "tryFromFloat(float:exactRequired:)"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "BOOL"
+- Name: "SpaydkmpBignumModularBigInteger"
+  SwiftName: "BignumModularBigInteger"
+  Properties:
+  - Name: "modulus"
+    PropertyKind: "Instance"
+    SwiftName: "modulus"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Name: "residue"
+    PropertyKind: "Instance"
+    SwiftName: "residue"
+    Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  Methods:
+  - Selector: "abs"
+    MethodKind: "Instance"
+    SwiftName: "abs()"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "addOther:"
+    MethodKind: "Instance"
+    SwiftName: "add(other:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "byteValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "byteValue(exactRequired:)"
+    ResultType: "int8_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "compareOther:"
+    MethodKind: "Instance"
+    SwiftName: "compare(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "compareToOther_:"
+    MethodKind: "Instance"
+    SwiftName: "compareTo(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id _Nonnull"
+  - Selector: "divideOther:"
+    MethodKind: "Instance"
+    SwiftName: "divide(other:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "divideAndRemainderOther:"
+    MethodKind: "Instance"
+    SwiftName: "divideAndRemainder(other:)"
+    ResultType: "SpaydkmpKotlinPair<SpaydkmpBignumModularBigInteger *, SpaydkmpBignumModularBigInteger *> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "divremOther:"
+    MethodKind: "Instance"
+    SwiftName: "divrem(other:)"
+    ResultType: "SpaydkmpBignumModularQuotientAndRemainder * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "doubleValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "doubleValue(exactRequired:)"
+    ResultType: "double"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "floatValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "floatValue(exactRequired:)"
+    ResultType: "float"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "getCreator"
+    MethodKind: "Instance"
+    SwiftName: "getCreator()"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+  - Selector: "getInstance"
+    MethodKind: "Instance"
+    SwiftName: "getInstance()"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "intValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "intValue(exactRequired:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "inverse"
+    MethodKind: "Instance"
+    SwiftName: "inverse()"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "isZero"
+    MethodKind: "Instance"
+    SwiftName: "isZero()"
+    ResultType: "BOOL"
+  - Selector: "longValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "longValue(exactRequired:)"
+    ResultType: "int64_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "multiplyOther:"
+    MethodKind: "Instance"
+    SwiftName: "multiply(other:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "negate"
+    MethodKind: "Instance"
+    SwiftName: "negate()"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "numberOfDecimalDigits"
+    MethodKind: "Instance"
+    SwiftName: "numberOfDecimalDigits()"
+    ResultType: "int64_t"
+  - Selector: "powExponent___:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "powExponent__:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "powExponent_:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "powExponent:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "remOther:"
+    MethodKind: "Instance"
+    SwiftName: "rem(other:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "remainderOther:"
+    MethodKind: "Instance"
+    SwiftName: "remainder(other:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "secureOverwrite"
+    MethodKind: "Instance"
+    SwiftName: "secureOverwrite()"
+    ResultType: "void"
+  - Selector: "shortValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "shortValue(exactRequired:)"
+    ResultType: "int16_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "signum"
+    MethodKind: "Instance"
+    SwiftName: "signum()"
+    ResultType: "int32_t"
+  - Selector: "subtractOther:"
+    MethodKind: "Instance"
+    SwiftName: "subtract(other:)"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "toBigInteger"
+    MethodKind: "Instance"
+    SwiftName: "toBigInteger()"
+    ResultType: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "toByteArray"
+    MethodKind: "Instance"
+    SwiftName: "toByteArray()"
+    ResultType: "SpaydkmpKotlinByteArray * _Nonnull"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "toStringBase:"
+    MethodKind: "Instance"
+    SwiftName: "toString(base:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "toStringWithModuloBase:"
+    MethodKind: "Instance"
+    SwiftName: "toStringWithModulo(base:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "toUByteArray"
+    MethodKind: "Instance"
+    SwiftName: "toUByteArray()"
+    ResultType: "id _Nonnull"
+  - Selector: "ubyteValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "ubyteValue(exactRequired:)"
+    ResultType: "uint8_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "uintValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "uintValue(exactRequired:)"
+    ResultType: "uint32_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "ulongValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "ulongValue(exactRequired:)"
+    ResultType: "uint64_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+  - Selector: "unaryMinus"
+    MethodKind: "Instance"
+    SwiftName: "unaryMinus()"
+    ResultType: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "ushortValueExactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "ushortValue(exactRequired:)"
+    ResultType: "uint16_t"
+    Parameters:
+    - Position: 0
+      Type: "BOOL"
+- Name: "SpaydkmpBignumModularBigIntegerCompanion"
+  SwiftName: "BignumModularBigInteger.Companion"
+  Methods:
+  - Selector: "creatorForModuloModulo_______:"
+    MethodKind: "Instance"
+    SwiftName: "creatorForModulo(modulo:)"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint64_t"
+  - Selector: "creatorForModuloModulo______:"
+    MethodKind: "Instance"
+    SwiftName: "creatorForModulo(modulo:)"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint32_t"
+  - Selector: "creatorForModuloModulo________:"
+    MethodKind: "Instance"
+    SwiftName: "creatorForModulo(modulo:)"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint16_t"
+  - Selector: "creatorForModuloModulo_____:"
+    MethodKind: "Instance"
+    SwiftName: "creatorForModulo(modulo:)"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "uint8_t"
+  - Selector: "creatorForModuloModulo___:"
+    MethodKind: "Instance"
+    SwiftName: "creatorForModulo(modulo:)"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "creatorForModuloModulo__:"
+    MethodKind: "Instance"
+    SwiftName: "creatorForModulo(modulo:)"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "creatorForModuloModulo____:"
+    MethodKind: "Instance"
+    SwiftName: "creatorForModulo(modulo:)"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+  - Selector: "creatorForModuloModulo_:"
+    MethodKind: "Instance"
+    SwiftName: "creatorForModulo(modulo:)"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+  - Selector: "creatorForModuloModulo:"
+    MethodKind: "Instance"
+    SwiftName: "creatorForModulo(modulo:)"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+- Name: "SpaydkmpBignumModularQuotientAndRemainder"
+  SwiftName: "BignumModularQuotientAndRemainder"
+  Properties:
+  - Name: "quotient"
+    PropertyKind: "Instance"
+    SwiftName: "quotient"
+    Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Name: "remainder"
+    PropertyKind: "Instance"
+    SwiftName: "remainder"
+    Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  Methods:
+  - Selector: "initWithQuotient:remainder:"
+    MethodKind: "Instance"
+    SwiftName: "init(quotient:remainder:)"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "doCopyQuotient:remainder:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(quotient:remainder:)"
+    ResultType: "SpaydkmpBignumModularQuotientAndRemainder * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumModularBigInteger * _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SpaydkmpBignumSign"
+  SwiftBridge: "BignumSign"
+  SwiftName: "__BignumSign"
+  SwiftPrivate: true
+  Properties:
+  - Name: "positive"
+    PropertyKind: "Class"
+    SwiftName: "positive"
+    Type: "SpaydkmpBignumSign * _Nonnull"
+  - Name: "negative"
+    PropertyKind: "Class"
+    SwiftName: "negative"
+    Type: "SpaydkmpBignumSign * _Nonnull"
+  - Name: "zero"
+    PropertyKind: "Class"
+    SwiftName: "zero"
+    Type: "SpaydkmpBignumSign * _Nonnull"
+  Methods:
+  - Selector: "not"
+    MethodKind: "Instance"
+    SwiftName: "not()"
+    ResultType: "SpaydkmpBignumSign * _Nonnull"
+  - Selector: "toInt"
+    MethodKind: "Instance"
+    SwiftName: "toInt()"
+    ResultType: "int32_t"
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
+- Name: "SpaydkmpBignumDecimalMode"
+  SwiftName: "BignumDecimalMode"
+  Properties:
+  - Name: "decimalPrecision"
+    PropertyKind: "Instance"
+    SwiftName: "decimalPrecision"
+    Type: "int64_t"
+  - Name: "isPrecisionUnlimited"
+    PropertyKind: "Instance"
+    SwiftName: "isPrecisionUnlimited"
+    Type: "BOOL"
+  - Name: "roundingMode"
+    PropertyKind: "Instance"
+    SwiftName: "roundingMode"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "scale"
+    PropertyKind: "Instance"
+    SwiftName: "scale"
+    Type: "int64_t"
+  - Name: "usingScale"
+    PropertyKind: "Instance"
+    SwiftName: "usingScale"
+    Type: "BOOL"
+  Methods:
+  - Selector: "initWithDecimalPrecision:roundingMode:scale:"
+    MethodKind: "Instance"
+    SwiftName: "init(decimalPrecision:roundingMode:scale:)"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+    - Position: 2
+      Type: "int64_t"
+  - Selector: "doCopyDecimalPrecision:roundingMode:scale:"
+    MethodKind: "Instance"
+    SwiftName: "doCopy(decimalPrecision:roundingMode:scale:)"
+    ResultType: "SpaydkmpBignumDecimalMode * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+    - Position: 2
+      Type: "int64_t"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "hash"
+    MethodKind: "Instance"
+    SwiftName: "hash()"
+    ResultType: "NSUInteger"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+- Name: "SpaydkmpBignumDecimalModeCompanion"
+  SwiftName: "BignumDecimalMode.Companion"
+  Properties:
+  - Name: "DEFAULT"
+    PropertyKind: "Instance"
+    SwiftName: "DEFAULT"
+    Type: "SpaydkmpBignumDecimalMode * _Nonnull"
+  - Name: "US_CURRENCY"
+    PropertyKind: "Instance"
+    SwiftName: "US_CURRENCY"
+    Type: "SpaydkmpBignumDecimalMode * _Nonnull"
+- Name: "SpaydkmpBignumRoundingMode"
+  SwiftBridge: "BignumRoundingMode"
+  SwiftName: "__BignumRoundingMode"
+  SwiftPrivate: true
+  Properties:
+  - Name: "floor"
+    PropertyKind: "Class"
+    SwiftName: "floor"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "ceiling"
+    PropertyKind: "Class"
+    SwiftName: "ceiling"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "awayFromZero"
+    PropertyKind: "Class"
+    SwiftName: "awayFromZero"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "towardsZero"
+    PropertyKind: "Class"
+    SwiftName: "towardsZero"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "none"
+    PropertyKind: "Class"
+    SwiftName: "none"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "roundHalfAwayFromZero"
+    PropertyKind: "Class"
+    SwiftName: "roundHalfAwayFromZero"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "roundHalfTowardsZero"
+    PropertyKind: "Class"
+    SwiftName: "roundHalfTowardsZero"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "roundHalfCeiling"
+    PropertyKind: "Class"
+    SwiftName: "roundHalfCeiling"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "roundHalfFloor"
+    PropertyKind: "Class"
+    SwiftName: "roundHalfFloor"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "roundHalfToEven"
+    PropertyKind: "Class"
+    SwiftName: "roundHalfToEven"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  - Name: "roundHalfToOdd"
+    PropertyKind: "Class"
+    SwiftName: "roundHalfToOdd"
+    Type: "SpaydkmpBignumRoundingMode * _Nonnull"
+  Methods:
+  - Selector: "initWithName:ordinal:"
+    MethodKind: "Instance"
+    SwiftName: "init(name:ordinal:)"
+    Availability: "nonswift"
 - Name: "Spaydkmp__SkieTypeExportsKt"
   SwiftName: "__SkieTypeExportsKt"
   Availability: "nonswift"
@@ -2121,6 +4163,36 @@ Protocols:
       Type: "int32_t"
     - Position: 2
       Type: "int32_t"
+- Name: "SpaydkmpKotlinIterable"
+  SwiftName: "KotlinIterable"
+  Methods:
+  - Selector: "iterator"
+    MethodKind: "Instance"
+    SwiftName: "iterator()"
+    ResultType: "id<SpaydkmpKotlinIterator> _Nonnull"
+- Name: "SpaydkmpKotlinClosedRange"
+  SwiftName: "KotlinClosedRange"
+  Properties:
+  - Name: "endInclusive"
+    PropertyKind: "Instance"
+    SwiftName: "endInclusive"
+    Type: "id _Nonnull"
+  - Name: "start"
+    PropertyKind: "Instance"
+    SwiftName: "start"
+    Type: "id _Nonnull"
+  Methods:
+  - Selector: "containsValue:"
+    MethodKind: "Instance"
+    SwiftName: "contains(value:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nonnull"
+  - Selector: "isEmpty"
+    MethodKind: "Instance"
+    SwiftName: "isEmpty()"
+    ResultType: "BOOL"
 - Name: "SpaydkmpSkie_DispatcherDelegate"
   SwiftName: "Skie_DispatcherDelegate"
   SwiftPrivate: true
@@ -3133,3 +5205,353 @@ Protocols:
       Type: "id<SpaydkmpKotlinKClass> _Nonnull"
     - Position: 1
       Type: "id<SpaydkmpKotlinx_serialization_coreSerializationStrategy> _Nullable (^ _Nonnull)(id _Nonnull)"
+- Name: "SpaydkmpBignumBigNumber"
+  SwiftName: "BignumBigNumber"
+  Properties:
+  - Name: "isNegative"
+    PropertyKind: "Instance"
+    SwiftName: "isNegative"
+    Type: "BOOL"
+  - Name: "isPositive"
+    PropertyKind: "Instance"
+    SwiftName: "isPositive"
+    Type: "BOOL"
+  Methods:
+  - Selector: "abs"
+    MethodKind: "Instance"
+    SwiftName: "abs()"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+  - Selector: "addOther:"
+    MethodKind: "Instance"
+    SwiftName: "add(other:)"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<SpaydkmpBignumBigNumber> _Nonnull"
+  - Selector: "compareToOther_:"
+    MethodKind: "Instance"
+    SwiftName: "compareTo(other:)"
+    ResultType: "int32_t"
+    Parameters:
+    - Position: 0
+      Type: "id _Nonnull"
+  - Selector: "divideOther:"
+    MethodKind: "Instance"
+    SwiftName: "divide(other:)"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<SpaydkmpBignumBigNumber> _Nonnull"
+  - Selector: "divideAndRemainderOther:"
+    MethodKind: "Instance"
+    SwiftName: "divideAndRemainder(other:)"
+    ResultType: "SpaydkmpKotlinPair<id<SpaydkmpBignumBigNumber>, id<SpaydkmpBignumBigNumber>> * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<SpaydkmpBignumBigNumber> _Nonnull"
+  - Selector: "isEqual:"
+    MethodKind: "Instance"
+    SwiftName: "isEqual(_:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "getCreator"
+    MethodKind: "Instance"
+    SwiftName: "getCreator()"
+    ResultType: "id<SpaydkmpBignumBigNumberCreator> _Nonnull"
+  - Selector: "isZero"
+    MethodKind: "Instance"
+    SwiftName: "isZero()"
+    ResultType: "BOOL"
+  - Selector: "multiplyOther:"
+    MethodKind: "Instance"
+    SwiftName: "multiply(other:)"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<SpaydkmpBignumBigNumber> _Nonnull"
+  - Selector: "negate"
+    MethodKind: "Instance"
+    SwiftName: "negate()"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+  - Selector: "numberOfDecimalDigits"
+    MethodKind: "Instance"
+    SwiftName: "numberOfDecimalDigits()"
+    ResultType: "int64_t"
+  - Selector: "powExponent:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "powExponent_:"
+    MethodKind: "Instance"
+    SwiftName: "pow(exponent:)"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "remainderOther:"
+    MethodKind: "Instance"
+    SwiftName: "remainder(other:)"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<SpaydkmpBignumBigNumber> _Nonnull"
+  - Selector: "secureOverwrite"
+    MethodKind: "Instance"
+    SwiftName: "secureOverwrite()"
+    ResultType: "void"
+  - Selector: "signum"
+    MethodKind: "Instance"
+    SwiftName: "signum()"
+    ResultType: "int32_t"
+  - Selector: "subtractOther:"
+    MethodKind: "Instance"
+    SwiftName: "subtract(other:)"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id<SpaydkmpBignumBigNumber> _Nonnull"
+  - Selector: "toStringBase:"
+    MethodKind: "Instance"
+    SwiftName: "toString(base:)"
+    ResultType: "NSString * _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "description"
+    MethodKind: "Instance"
+    SwiftName: "description()"
+    ResultType: "NSString * _Nonnull"
+  - Selector: "unaryMinus"
+    MethodKind: "Instance"
+    SwiftName: "unaryMinus()"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+- Name: "SpaydkmpBignumBigNumberCreator"
+  SwiftName: "BignumBigNumberCreator"
+  Properties:
+  - Name: "ONE"
+    PropertyKind: "Instance"
+    SwiftName: "ONE"
+    Type: "id _Nullable"
+  - Name: "TEN"
+    PropertyKind: "Instance"
+    SwiftName: "TEN"
+    Type: "id _Nullable"
+  - Name: "TWO"
+    PropertyKind: "Instance"
+    SwiftName: "TWO"
+    Type: "id _Nullable"
+  - Name: "ZERO"
+    PropertyKind: "Instance"
+    SwiftName: "ZERO"
+    Type: "id _Nullable"
+  Methods:
+  - Selector: "fromBigIntegerBigInteger:"
+    MethodKind: "Instance"
+    SwiftName: "fromBigInteger(bigInteger:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpBignumBigInteger * _Nonnull"
+  - Selector: "fromByteByte:"
+    MethodKind: "Instance"
+    SwiftName: "fromByte(byte:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int8_t"
+  - Selector: "fromIntInt:"
+    MethodKind: "Instance"
+    SwiftName: "fromInt(int:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "fromLongLong:"
+    MethodKind: "Instance"
+    SwiftName: "fromLong(long:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "fromShortShort:"
+    MethodKind: "Instance"
+    SwiftName: "fromShort(short:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int16_t"
+  - Selector: "fromUByteUByte:"
+    MethodKind: "Instance"
+    SwiftName: "fromUByte(uByte:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "uint8_t"
+  - Selector: "fromUIntUInt:"
+    MethodKind: "Instance"
+    SwiftName: "fromUInt(uInt:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "uint32_t"
+  - Selector: "fromULongULong:"
+    MethodKind: "Instance"
+    SwiftName: "fromULong(uLong:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "uint64_t"
+  - Selector: "fromUShortUShort:"
+    MethodKind: "Instance"
+    SwiftName: "fromUShort(uShort:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "uint16_t"
+  - Selector: "parseStringString:base:"
+    MethodKind: "Instance"
+    SwiftName: "parseString(string:base:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "NSString * _Nonnull"
+    - Position: 1
+      Type: "int32_t"
+  - Selector: "tryFromDoubleDouble:exactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "tryFromDouble(double:exactRequired:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "double"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "tryFromFloatFloat:exactRequired:"
+    MethodKind: "Instance"
+    SwiftName: "tryFromFloat(float:exactRequired:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "float"
+    - Position: 1
+      Type: "BOOL"
+- Name: "SpaydkmpBignumBigNumberUtil"
+  SwiftName: "BignumBigNumberUtil"
+  Methods:
+  - Selector: "maxFirst:second:"
+    MethodKind: "Instance"
+    SwiftName: "max(first:second:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable"
+  - Selector: "minFirst:second:"
+    MethodKind: "Instance"
+    SwiftName: "min(first:second:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+    - Position: 1
+      Type: "id _Nullable"
+- Name: "SpaydkmpBignumByteArraySerializable"
+  SwiftName: "BignumByteArraySerializable"
+  Methods:
+  - Selector: "toByteArray"
+    MethodKind: "Instance"
+    SwiftName: "toByteArray()"
+    ResultType: "SpaydkmpKotlinByteArray * _Nonnull"
+  - Selector: "toUByteArray"
+    MethodKind: "Instance"
+    SwiftName: "toUByteArray()"
+    ResultType: "id _Nonnull"
+- Name: "SpaydkmpBignumBitwiseCapable"
+  SwiftName: "BignumBitwiseCapable"
+  Methods:
+  - Selector: "andOther:"
+    MethodKind: "Instance"
+    SwiftName: "and(other:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "bitAtPosition:"
+    MethodKind: "Instance"
+    SwiftName: "bitAt(position:)"
+    ResultType: "BOOL"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+  - Selector: "bitLength"
+    MethodKind: "Instance"
+    SwiftName: "bitLength()"
+    ResultType: "int32_t"
+  - Selector: "not"
+    MethodKind: "Instance"
+    SwiftName: "not()"
+    ResultType: "id _Nullable"
+  - Selector: "orOther:"
+    MethodKind: "Instance"
+    SwiftName: "or(other:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+  - Selector: "setBitAtPosition:bit:"
+    MethodKind: "Instance"
+    SwiftName: "setBitAt(position:bit:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int64_t"
+    - Position: 1
+      Type: "BOOL"
+  - Selector: "shlPlaces:"
+    MethodKind: "Instance"
+    SwiftName: "shl(places:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "shrPlaces:"
+    MethodKind: "Instance"
+    SwiftName: "shr(places:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "int32_t"
+  - Selector: "xorOther:"
+    MethodKind: "Instance"
+    SwiftName: "xor(other:)"
+    ResultType: "id _Nullable"
+    Parameters:
+    - Position: 0
+      Type: "id _Nullable"
+- Name: "SpaydkmpBignumByteArrayDeserializable"
+  SwiftName: "BignumByteArrayDeserializable"
+  Methods:
+  - Selector: "fromByteArraySource:sign:"
+    MethodKind: "Instance"
+    SwiftName: "fromByteArray(source:sign:)"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "SpaydkmpKotlinByteArray * _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumSign * _Nonnull"
+  - Selector: "fromUByteArraySource:sign:"
+    MethodKind: "Instance"
+    SwiftName: "fromUByteArray(source:sign:)"
+    ResultType: "id<SpaydkmpBignumBigNumber> _Nonnull"
+    Parameters:
+    - Position: 0
+      Type: "id _Nonnull"
+    - Position: 1
+      Type: "SpaydkmpBignumSign * _Nonnull"

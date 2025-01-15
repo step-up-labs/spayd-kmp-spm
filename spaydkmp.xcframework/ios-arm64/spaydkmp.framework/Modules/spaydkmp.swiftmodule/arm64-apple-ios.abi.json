@@ -22012,8 +22012,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "date",
-            "printedName": "date",
+            "name": "dueDate",
+            "printedName": "dueDate",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -22043,15 +22043,15 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8spaydkmp3KeyO4dateyA2CmF",
-            "mangledName": "$s8spaydkmp3KeyO4dateyA2CmF",
+            "usr": "s:8spaydkmp3KeyO7dueDateyA2CmF",
+            "mangledName": "$s8spaydkmp3KeyO7dueDateyA2CmF",
             "moduleName": "spaydkmp",
             "fixedbinaryorder": 0
           },
           {
             "kind": "Var",
-            "name": "currency",
-            "printedName": "currency",
+            "name": "currencyCode",
+            "printedName": "currencyCode",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -22081,8 +22081,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8spaydkmp3KeyO8currencyyA2CmF",
-            "mangledName": "$s8spaydkmp3KeyO8currencyyA2CmF",
+            "usr": "s:8spaydkmp3KeyO12currencyCodeyA2CmF",
+            "mangledName": "$s8spaydkmp3KeyO12currencyCodeyA2CmF",
             "moduleName": "spaydkmp",
             "fixedbinaryorder": 1
           },
@@ -22126,8 +22126,8 @@
           },
           {
             "kind": "Var",
-            "name": "account",
-            "printedName": "account",
+            "name": "bankAccount",
+            "printedName": "bankAccount",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -22157,15 +22157,15 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8spaydkmp3KeyO7accountyA2CmF",
-            "mangledName": "$s8spaydkmp3KeyO7accountyA2CmF",
+            "usr": "s:8spaydkmp3KeyO11bankAccountyA2CmF",
+            "mangledName": "$s8spaydkmp3KeyO11bankAccountyA2CmF",
             "moduleName": "spaydkmp",
             "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
-            "name": "alternateAccounts",
-            "printedName": "alternateAccounts",
+            "name": "alternativeBankAccounts",
+            "printedName": "alternativeBankAccounts",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -22195,15 +22195,15 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8spaydkmp3KeyO17alternateAccountsyA2CmF",
-            "mangledName": "$s8spaydkmp3KeyO17alternateAccountsyA2CmF",
+            "usr": "s:8spaydkmp3KeyO23alternativeBankAccountsyA2CmF",
+            "mangledName": "$s8spaydkmp3KeyO23alternativeBankAccountsyA2CmF",
             "moduleName": "spaydkmp",
             "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
-            "name": "senderReference",
-            "printedName": "senderReference",
+            "name": "referenceForRecipient",
+            "printedName": "referenceForRecipient",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -22233,8 +22233,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8spaydkmp3KeyO15senderReferenceyA2CmF",
-            "mangledName": "$s8spaydkmp3KeyO15senderReferenceyA2CmF",
+            "usr": "s:8spaydkmp3KeyO21referenceForRecipientyA2CmF",
+            "mangledName": "$s8spaydkmp3KeyO21referenceForRecipientyA2CmF",
             "moduleName": "spaydkmp",
             "fixedbinaryorder": 5
           },
@@ -22430,8 +22430,8 @@
           },
           {
             "kind": "Var",
-            "name": "repeat",
-            "printedName": "repeat",
+            "name": "daysToRepeatIfUnsuccessful",
+            "printedName": "daysToRepeatIfUnsuccessful",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -22461,8 +22461,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8spaydkmp3KeyO6repeatyA2CmF",
-            "mangledName": "$s8spaydkmp3KeyO6repeatyA2CmF",
+            "usr": "s:8spaydkmp3KeyO26daysToRepeatIfUnsuccessfulyA2CmF",
+            "mangledName": "$s8spaydkmp3KeyO26daysToRepeatIfUnsuccessfulyA2CmF",
             "moduleName": "spaydkmp",
             "fixedbinaryorder": 11
           },
@@ -22582,8 +22582,8 @@
           },
           {
             "kind": "Var",
-            "name": "identifier",
-            "printedName": "identifier",
+            "name": "referenceForSender",
+            "printedName": "referenceForSender",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -22613,8 +22613,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:8spaydkmp3KeyO10identifieryA2CmF",
-            "mangledName": "$s8spaydkmp3KeyO10identifieryA2CmF",
+            "usr": "s:8spaydkmp3KeyO18referenceForSenderyA2CmF",
+            "mangledName": "$s8spaydkmp3KeyO18referenceForSenderyA2CmF",
             "moduleName": "spaydkmp",
             "fixedbinaryorder": 15
           },
@@ -24041,6 +24041,582 @@
                     "name": "__NotificationType",
                     "printedName": "spaydkmp.__NotificationType",
                     "usr": "c:objc(cs)SpaydkmpNotificationType"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "spaydkmp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentType",
+        "printedName": "PaymentType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "immediatePayment",
+            "printedName": "immediatePayment",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.PaymentType.Type) -> spaydkmp.PaymentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentType",
+                    "printedName": "spaydkmp.PaymentType",
+                    "usr": "s:8spaydkmp11PaymentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.PaymentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentType",
+                        "printedName": "spaydkmp.PaymentType",
+                        "usr": "s:8spaydkmp11PaymentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp11PaymentTypeO09immediateB0yA2CmF",
+            "mangledName": "$s8spaydkmp11PaymentTypeO09immediateB0yA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp11PaymentTypeO3keySSvp",
+            "mangledName": "$s8spaydkmp11PaymentTypeO3keySSvp",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp11PaymentTypeO3keySSvg",
+                "mangledName": "$s8spaydkmp11PaymentTypeO3keySSvg",
+                "moduleName": "spaydkmp",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp11PaymentTypeO4nameSSvp",
+            "mangledName": "$s8spaydkmp11PaymentTypeO4nameSSvp",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp11PaymentTypeO4nameSSvg",
+                "mangledName": "$s8spaydkmp11PaymentTypeO4nameSSvg",
+                "moduleName": "spaydkmp",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp11PaymentTypeO7ordinals5Int32Vvp",
+            "mangledName": "$s8spaydkmp11PaymentTypeO7ordinals5Int32Vvp",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp11PaymentTypeO7ordinals5Int32Vvg",
+                "mangledName": "$s8spaydkmp11PaymentTypeO7ordinals5Int32Vvg",
+                "moduleName": "spaydkmp",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__PaymentType",
+                "printedName": "spaydkmp.__PaymentType",
+                "usr": "c:objc(cs)SpaydkmpPaymentType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "spaydkmp.PaymentType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentType",
+                    "printedName": "spaydkmp.PaymentType",
+                    "usr": "s:8spaydkmp11PaymentTypeO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp11PaymentTypeO26_forceBridgeFromObjectiveC_6resultySo08SpaydkmpbC0C_ACSgztFZ",
+            "mangledName": "$s8spaydkmp11PaymentTypeO26_forceBridgeFromObjectiveC_6resultySo08SpaydkmpbC0C_ACSgztFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__PaymentType",
+                "printedName": "spaydkmp.__PaymentType",
+                "usr": "c:objc(cs)SpaydkmpPaymentType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "spaydkmp.PaymentType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentType",
+                    "printedName": "spaydkmp.PaymentType",
+                    "usr": "s:8spaydkmp11PaymentTypeO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp11PaymentTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo08SpaydkmpbC0C_ACSgztFZ",
+            "mangledName": "$s8spaydkmp11PaymentTypeO34_conditionallyBridgeFromObjectiveC_6resultSbSo08SpaydkmpbC0C_ACSgztFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentType",
+                "printedName": "spaydkmp.PaymentType",
+                "usr": "s:8spaydkmp11PaymentTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "spaydkmp.__PaymentType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__PaymentType",
+                    "printedName": "spaydkmp.__PaymentType",
+                    "usr": "c:objc(cs)SpaydkmpPaymentType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp11PaymentTypeO36_unconditionallyBridgeFromObjectiveCyACSo08SpaydkmpbC0CSgFZ",
+            "mangledName": "$s8spaydkmp11PaymentTypeO36_unconditionallyBridgeFromObjectiveCyACSo08SpaydkmpbC0CSgFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__PaymentType",
+                "printedName": "spaydkmp.__PaymentType",
+                "usr": "c:objc(cs)SpaydkmpPaymentType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp11PaymentTypeO19_bridgeToObjectiveCSo08SpaydkmpbC0CyF",
+            "mangledName": "$s8spaydkmp11PaymentTypeO19_bridgeToObjectiveCSo08SpaydkmpbC0CyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentType",
+                "printedName": "spaydkmp.PaymentType",
+                "usr": "s:8spaydkmp11PaymentTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentType",
+                "printedName": "spaydkmp.PaymentType",
+                "usr": "s:8spaydkmp11PaymentTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp11PaymentTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8spaydkmp11PaymentTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp11PaymentTypeO9hashValueSivp",
+            "mangledName": "$s8spaydkmp11PaymentTypeO9hashValueSivp",
+            "moduleName": "spaydkmp",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp11PaymentTypeO9hashValueSivg",
+                "mangledName": "$s8spaydkmp11PaymentTypeO9hashValueSivg",
+                "moduleName": "spaydkmp",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp11PaymentTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8spaydkmp11PaymentTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "spaydkmp",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[spaydkmp.PaymentType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentType",
+                    "printedName": "spaydkmp.PaymentType",
+                    "usr": "s:8spaydkmp11PaymentTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp11PaymentTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s8spaydkmp11PaymentTypeO8allCasesSayACGvpZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[spaydkmp.PaymentType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentType",
+                        "printedName": "spaydkmp.PaymentType",
+                        "usr": "s:8spaydkmp11PaymentTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp11PaymentTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s8spaydkmp11PaymentTypeO8allCasesSayACGvgZ",
+                "moduleName": "spaydkmp",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__PaymentType",
+                "printedName": "spaydkmp.__PaymentType",
+                "usr": "c:objc(cs)SpaydkmpPaymentType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp11PaymentTypeO12toKotlinEnumSo08SpaydkmpbC0CyF",
+            "mangledName": "$s8spaydkmp11PaymentTypeO12toKotlinEnumSo08SpaydkmpbC0CyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8spaydkmp11PaymentTypeO",
+        "mangledName": "$s8spaydkmp11PaymentTypeO",
+        "moduleName": "spaydkmp",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[spaydkmp.PaymentType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentType",
+                        "printedName": "spaydkmp.PaymentType",
+                        "usr": "s:8spaydkmp11PaymentTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__PaymentType",
+                    "printedName": "spaydkmp.__PaymentType",
+                    "usr": "c:objc(cs)SpaydkmpPaymentType"
                   }
                 ]
               }
@@ -26398,6 +26974,1576 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "BignumSign",
+        "printedName": "BignumSign",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "positive",
+            "printedName": "positive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumSign.Type) -> spaydkmp.BignumSign",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumSign",
+                    "printedName": "spaydkmp.BignumSign",
+                    "usr": "s:8spaydkmp10BignumSignO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumSign.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumSign",
+                        "printedName": "spaydkmp.BignumSign",
+                        "usr": "s:8spaydkmp10BignumSignO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp10BignumSignO8positiveyA2CmF",
+            "mangledName": "$s8spaydkmp10BignumSignO8positiveyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "negative",
+            "printedName": "negative",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumSign.Type) -> spaydkmp.BignumSign",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumSign",
+                    "printedName": "spaydkmp.BignumSign",
+                    "usr": "s:8spaydkmp10BignumSignO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumSign.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumSign",
+                        "printedName": "spaydkmp.BignumSign",
+                        "usr": "s:8spaydkmp10BignumSignO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp10BignumSignO8negativeyA2CmF",
+            "mangledName": "$s8spaydkmp10BignumSignO8negativeyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "zero",
+            "printedName": "zero",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumSign.Type) -> spaydkmp.BignumSign",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumSign",
+                    "printedName": "spaydkmp.BignumSign",
+                    "usr": "s:8spaydkmp10BignumSignO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumSign.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumSign",
+                        "printedName": "spaydkmp.BignumSign",
+                        "usr": "s:8spaydkmp10BignumSignO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp10BignumSignO4zeroyA2CmF",
+            "mangledName": "$s8spaydkmp10BignumSignO4zeroyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp10BignumSignO4nameSSvp",
+            "mangledName": "$s8spaydkmp10BignumSignO4nameSSvp",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp10BignumSignO4nameSSvg",
+                "mangledName": "$s8spaydkmp10BignumSignO4nameSSvg",
+                "moduleName": "spaydkmp",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp10BignumSignO7ordinals5Int32Vvp",
+            "mangledName": "$s8spaydkmp10BignumSignO7ordinals5Int32Vvp",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp10BignumSignO7ordinals5Int32Vvg",
+                "mangledName": "$s8spaydkmp10BignumSignO7ordinals5Int32Vvg",
+                "moduleName": "spaydkmp",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "not",
+            "printedName": "not()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BignumSign",
+                "printedName": "spaydkmp.BignumSign",
+                "usr": "s:8spaydkmp10BignumSignO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp10BignumSignO3notACyF",
+            "mangledName": "$s8spaydkmp10BignumSignO3notACyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toInt",
+            "printedName": "toInt()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp10BignumSignO5toInts5Int32VyF",
+            "mangledName": "$s8spaydkmp10BignumSignO5toInts5Int32VyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__BignumSign",
+                "printedName": "spaydkmp.__BignumSign",
+                "usr": "c:objc(cs)SpaydkmpBignumSign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "spaydkmp.BignumSign?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumSign",
+                    "printedName": "spaydkmp.BignumSign",
+                    "usr": "s:8spaydkmp10BignumSignO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp10BignumSignO26_forceBridgeFromObjectiveC_6resultySo08SpaydkmpbC0C_ACSgztFZ",
+            "mangledName": "$s8spaydkmp10BignumSignO26_forceBridgeFromObjectiveC_6resultySo08SpaydkmpbC0C_ACSgztFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__BignumSign",
+                "printedName": "spaydkmp.__BignumSign",
+                "usr": "c:objc(cs)SpaydkmpBignumSign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "spaydkmp.BignumSign?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumSign",
+                    "printedName": "spaydkmp.BignumSign",
+                    "usr": "s:8spaydkmp10BignumSignO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp10BignumSignO34_conditionallyBridgeFromObjectiveC_6resultSbSo08SpaydkmpbC0C_ACSgztFZ",
+            "mangledName": "$s8spaydkmp10BignumSignO34_conditionallyBridgeFromObjectiveC_6resultSbSo08SpaydkmpbC0C_ACSgztFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BignumSign",
+                "printedName": "spaydkmp.BignumSign",
+                "usr": "s:8spaydkmp10BignumSignO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "spaydkmp.__BignumSign?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__BignumSign",
+                    "printedName": "spaydkmp.__BignumSign",
+                    "usr": "c:objc(cs)SpaydkmpBignumSign"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp10BignumSignO36_unconditionallyBridgeFromObjectiveCyACSo08SpaydkmpbC0CSgFZ",
+            "mangledName": "$s8spaydkmp10BignumSignO36_unconditionallyBridgeFromObjectiveCyACSo08SpaydkmpbC0CSgFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__BignumSign",
+                "printedName": "spaydkmp.__BignumSign",
+                "usr": "c:objc(cs)SpaydkmpBignumSign"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp10BignumSignO19_bridgeToObjectiveCSo08SpaydkmpbC0CyF",
+            "mangledName": "$s8spaydkmp10BignumSignO19_bridgeToObjectiveCSo08SpaydkmpbC0CyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BignumSign",
+                "printedName": "spaydkmp.BignumSign",
+                "usr": "s:8spaydkmp10BignumSignO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BignumSign",
+                "printedName": "spaydkmp.BignumSign",
+                "usr": "s:8spaydkmp10BignumSignO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp10BignumSignO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8spaydkmp10BignumSignO2eeoiySbAC_ACtFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp10BignumSignO9hashValueSivp",
+            "mangledName": "$s8spaydkmp10BignumSignO9hashValueSivp",
+            "moduleName": "spaydkmp",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp10BignumSignO9hashValueSivg",
+                "mangledName": "$s8spaydkmp10BignumSignO9hashValueSivg",
+                "moduleName": "spaydkmp",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp10BignumSignO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8spaydkmp10BignumSignO4hash4intoys6HasherVz_tF",
+            "moduleName": "spaydkmp",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[spaydkmp.BignumSign]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumSign",
+                    "printedName": "spaydkmp.BignumSign",
+                    "usr": "s:8spaydkmp10BignumSignO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp10BignumSignO8allCasesSayACGvpZ",
+            "mangledName": "$s8spaydkmp10BignumSignO8allCasesSayACGvpZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[spaydkmp.BignumSign]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumSign",
+                        "printedName": "spaydkmp.BignumSign",
+                        "usr": "s:8spaydkmp10BignumSignO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp10BignumSignO8allCasesSayACGvgZ",
+                "mangledName": "$s8spaydkmp10BignumSignO8allCasesSayACGvgZ",
+                "moduleName": "spaydkmp",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__BignumSign",
+                "printedName": "spaydkmp.__BignumSign",
+                "usr": "c:objc(cs)SpaydkmpBignumSign"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp10BignumSignO12toKotlinEnumSo08SpaydkmpbC0CyF",
+            "mangledName": "$s8spaydkmp10BignumSignO12toKotlinEnumSo08SpaydkmpbC0CyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8spaydkmp10BignumSignO",
+        "mangledName": "$s8spaydkmp10BignumSignO",
+        "moduleName": "spaydkmp",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[spaydkmp.BignumSign]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumSign",
+                        "printedName": "spaydkmp.BignumSign",
+                        "usr": "s:8spaydkmp10BignumSignO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__BignumSign",
+                    "printedName": "spaydkmp.__BignumSign",
+                    "usr": "c:objc(cs)SpaydkmpBignumSign"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "spaydkmp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BignumRoundingMode",
+        "printedName": "BignumRoundingMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "floor",
+            "printedName": "floor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO5flooryA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO5flooryA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "ceiling",
+            "printedName": "ceiling",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO7ceilingyA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO7ceilingyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "awayFromZero",
+            "printedName": "awayFromZero",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO12awayFromZeroyA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO12awayFromZeroyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "towardsZero",
+            "printedName": "towardsZero",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO11towardsZeroyA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO11towardsZeroyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO4noneyA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO4noneyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "roundHalfAwayFromZero",
+            "printedName": "roundHalfAwayFromZero",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO21roundHalfAwayFromZeroyA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO21roundHalfAwayFromZeroyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "roundHalfTowardsZero",
+            "printedName": "roundHalfTowardsZero",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO20roundHalfTowardsZeroyA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO20roundHalfTowardsZeroyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "roundHalfCeiling",
+            "printedName": "roundHalfCeiling",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO16roundHalfCeilingyA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO16roundHalfCeilingyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "roundHalfFloor",
+            "printedName": "roundHalfFloor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO14roundHalfFlooryA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO14roundHalfFlooryA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "roundHalfToEven",
+            "printedName": "roundHalfToEven",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO15roundHalfToEvenyA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO15roundHalfToEvenyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "roundHalfToOdd",
+            "printedName": "roundHalfToOdd",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(spaydkmp.BignumRoundingMode.Type) -> spaydkmp.BignumRoundingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "spaydkmp.BignumRoundingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8spaydkmp18BignumRoundingModeO14roundHalfToOddyA2CmF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO14roundHalfToOddyA2CmF",
+            "moduleName": "spaydkmp",
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp18BignumRoundingModeO4nameSSvp",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO4nameSSvp",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp18BignumRoundingModeO4nameSSvg",
+                "mangledName": "$s8spaydkmp18BignumRoundingModeO4nameSSvg",
+                "moduleName": "spaydkmp",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ordinal",
+            "printedName": "ordinal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp18BignumRoundingModeO7ordinals5Int32Vvp",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO7ordinals5Int32Vvp",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp18BignumRoundingModeO7ordinals5Int32Vvg",
+                "mangledName": "$s8spaydkmp18BignumRoundingModeO7ordinals5Int32Vvg",
+                "moduleName": "spaydkmp",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "_forceBridgeFromObjectiveC",
+            "printedName": "_forceBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__BignumRoundingMode",
+                "printedName": "spaydkmp.__BignumRoundingMode",
+                "usr": "c:objc(cs)SpaydkmpBignumRoundingMode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "spaydkmp.BignumRoundingMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp18BignumRoundingModeO26_forceBridgeFromObjectiveC_6resultySo08SpaydkmpbcD0C_ACSgztFZ",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO26_forceBridgeFromObjectiveC_6resultySo08SpaydkmpbcD0C_ACSgztFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_conditionallyBridgeFromObjectiveC",
+            "printedName": "_conditionallyBridgeFromObjectiveC(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "__BignumRoundingMode",
+                "printedName": "spaydkmp.__BignumRoundingMode",
+                "usr": "c:objc(cs)SpaydkmpBignumRoundingMode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "spaydkmp.BignumRoundingMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  }
+                ],
+                "paramValueOwnership": "InOut",
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp18BignumRoundingModeO34_conditionallyBridgeFromObjectiveC_6resultSbSo08SpaydkmpbcD0C_ACSgztFZ",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO34_conditionallyBridgeFromObjectiveC_6resultSbSo08SpaydkmpbcD0C_ACSgztFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_unconditionallyBridgeFromObjectiveC",
+            "printedName": "_unconditionallyBridgeFromObjectiveC(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BignumRoundingMode",
+                "printedName": "spaydkmp.BignumRoundingMode",
+                "usr": "s:8spaydkmp18BignumRoundingModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "spaydkmp.__BignumRoundingMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__BignumRoundingMode",
+                    "printedName": "spaydkmp.__BignumRoundingMode",
+                    "usr": "c:objc(cs)SpaydkmpBignumRoundingMode"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp18BignumRoundingModeO36_unconditionallyBridgeFromObjectiveCyACSo08SpaydkmpbcD0CSgFZ",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO36_unconditionallyBridgeFromObjectiveCyACSo08SpaydkmpbcD0CSgFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "_bridgeToObjectiveC",
+            "printedName": "_bridgeToObjectiveC()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__BignumRoundingMode",
+                "printedName": "spaydkmp.__BignumRoundingMode",
+                "usr": "c:objc(cs)SpaydkmpBignumRoundingMode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp18BignumRoundingModeO19_bridgeToObjectiveCSo08SpaydkmpbcD0CyF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO19_bridgeToObjectiveCSo08SpaydkmpbcD0CyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BignumRoundingMode",
+                "printedName": "spaydkmp.BignumRoundingMode",
+                "usr": "s:8spaydkmp18BignumRoundingModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BignumRoundingMode",
+                "printedName": "spaydkmp.BignumRoundingMode",
+                "usr": "s:8spaydkmp18BignumRoundingModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp18BignumRoundingModeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO2eeoiySbAC_ACtFZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp18BignumRoundingModeO9hashValueSivp",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO9hashValueSivp",
+            "moduleName": "spaydkmp",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp18BignumRoundingModeO9hashValueSivg",
+                "mangledName": "$s8spaydkmp18BignumRoundingModeO9hashValueSivg",
+                "moduleName": "spaydkmp",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp18BignumRoundingModeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO4hash4intoys6HasherVz_tF",
+            "moduleName": "spaydkmp",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[spaydkmp.BignumRoundingMode]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BignumRoundingMode",
+                    "printedName": "spaydkmp.BignumRoundingMode",
+                    "usr": "s:8spaydkmp18BignumRoundingModeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8spaydkmp18BignumRoundingModeO8allCasesSayACGvpZ",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO8allCasesSayACGvpZ",
+            "moduleName": "spaydkmp",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[spaydkmp.BignumRoundingMode]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8spaydkmp18BignumRoundingModeO8allCasesSayACGvgZ",
+                "mangledName": "$s8spaydkmp18BignumRoundingModeO8allCasesSayACGvgZ",
+                "moduleName": "spaydkmp",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toKotlinEnum",
+            "printedName": "toKotlinEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "__BignumRoundingMode",
+                "printedName": "spaydkmp.__BignumRoundingMode",
+                "usr": "c:objc(cs)SpaydkmpBignumRoundingMode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8spaydkmp18BignumRoundingModeO12toKotlinEnumSo08SpaydkmpbcD0CyF",
+            "mangledName": "$s8spaydkmp18BignumRoundingModeO12toKotlinEnumSo08SpaydkmpbcD0CyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8spaydkmp18BignumRoundingModeO",
+        "mangledName": "$s8spaydkmp18BignumRoundingModeO",
+        "moduleName": "spaydkmp",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[spaydkmp.BignumRoundingMode]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BignumRoundingMode",
+                        "printedName": "spaydkmp.BignumRoundingMode",
+                        "usr": "s:8spaydkmp18BignumRoundingModeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "__BignumRoundingMode",
+                    "printedName": "spaydkmp.__BignumRoundingMode",
+                    "usr": "c:objc(cs)SpaydkmpBignumRoundingMode"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "spaydkmp",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Function",
         "name": "onEnum",
         "printedName": "onEnum(of:)",
@@ -27779,6 +29925,102 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "__PaymentType",
+        "printedName": "__PaymentType",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftEnum",
+            "printedName": "toSwiftEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentType",
+                "printedName": "spaydkmp.PaymentType",
+                "usr": "s:8spaydkmp11PaymentTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So19SpaydkmpPaymentTypeC8spaydkmpE11toSwiftEnumAC0bC0OyF",
+            "mangledName": "$sSo19SpaydkmpPaymentTypeC8spaydkmpE11toSwiftEnumAC0bC0OyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)SpaydkmpPaymentType",
+        "moduleName": "spaydkmp",
+        "objc_name": "SpaydkmpPaymentType",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)SpaydkmpKotlinEnum",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "spaydkmp.KotlinEnum<spaydkmp.__PaymentType>",
+          "spaydkmp.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "__Kotlinx_datetimeMonth",
         "printedName": "__Kotlinx_datetimeMonth",
         "children": [
@@ -28010,6 +30252,198 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "spaydkmp.KotlinEnum<spaydkmp.__Kotlinx_datetimePadding>",
+          "spaydkmp.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "__BignumSign",
+        "printedName": "__BignumSign",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftEnum",
+            "printedName": "toSwiftEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BignumSign",
+                "printedName": "spaydkmp.BignumSign",
+                "usr": "s:8spaydkmp10BignumSignO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So18SpaydkmpBignumSignC8spaydkmpE11toSwiftEnumAC0bC0OyF",
+            "mangledName": "$sSo18SpaydkmpBignumSignC8spaydkmpE11toSwiftEnumAC0bC0OyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)SpaydkmpBignumSign",
+        "moduleName": "spaydkmp",
+        "objc_name": "SpaydkmpBignumSign",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)SpaydkmpKotlinEnum",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "spaydkmp.KotlinEnum<spaydkmp.__BignumSign>",
+          "spaydkmp.KotlinBase",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "__BignumRoundingMode",
+        "printedName": "__BignumRoundingMode",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toSwiftEnum",
+            "printedName": "toSwiftEnum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BignumRoundingMode",
+                "printedName": "spaydkmp.BignumRoundingMode",
+                "usr": "s:8spaydkmp18BignumRoundingModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So26SpaydkmpBignumRoundingModeC8spaydkmpE11toSwiftEnumAC0bcD0OyF",
+            "mangledName": "$sSo26SpaydkmpBignumRoundingModeC8spaydkmpE11toSwiftEnumAC0bcD0OyF",
+            "moduleName": "spaydkmp",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)SpaydkmpBignumRoundingMode",
+        "moduleName": "spaydkmp",
+        "objc_name": "SpaydkmpBignumRoundingMode",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)SpaydkmpKotlinEnum",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "spaydkmp.KotlinEnum<spaydkmp.__BignumRoundingMode>",
           "spaydkmp.KotlinBase",
           "ObjectiveC.NSObject"
         ],

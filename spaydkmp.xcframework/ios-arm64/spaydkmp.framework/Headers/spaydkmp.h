@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class Spaydkmp__SkieTypeExportsKt, Spaydkmp__SkieSuspendWrappersKt, SpaydkmpValidationException, SpaydkmpUShort, SpaydkmpULong, SpaydkmpUInt, SpaydkmpUByte, SpaydkmpTransformer, SpaydkmpSpaydCompanion, SpaydkmpSpayd, SpaydkmpSkie_SuspendResultSuccess, SpaydkmpSkie_SuspendResultError, SpaydkmpSkie_SuspendResultCanceled, SpaydkmpSkie_SuspendResult, SpaydkmpSkie_SuspendHandler, SpaydkmpSkie_CancellationHandler, SpaydkmpSkieKotlinStateFlow<T>, SpaydkmpSkieKotlinSharedFlow<T>, SpaydkmpSkieKotlinOptionalStateFlow<T>, SpaydkmpSkieKotlinOptionalSharedFlow<T>, SpaydkmpSkieKotlinOptionalMutableStateFlow<T>, SpaydkmpSkieKotlinOptionalMutableSharedFlow<T>, SpaydkmpSkieKotlinOptionalFlow<T>, SpaydkmpSkieKotlinMutableStateFlow<T>, SpaydkmpSkieKotlinMutableSharedFlow<T>, SpaydkmpSkieKotlinFlow<T>, SpaydkmpSkieColdFlowIterator<E>, SpaydkmpShort, SpaydkmpParserStateMachineCompanion, SpaydkmpParserStateMachine, SpaydkmpNumber, SpaydkmpNotificationType, SpaydkmpMutableSet<ObjectType>, SpaydkmpMutableDictionary<KeyType, ObjectType>, SpaydkmpLong, SpaydkmpKotlinx_serialization_coreStructureKindOBJECT, SpaydkmpKotlinx_serialization_coreStructureKindMAP, SpaydkmpKotlinx_serialization_coreStructureKindLIST, SpaydkmpKotlinx_serialization_coreStructureKindCLASS, SpaydkmpKotlinx_serialization_coreStructureKind, SpaydkmpKotlinx_serialization_coreSerializersModule, SpaydkmpKotlinx_serialization_coreSerialKindENUM, SpaydkmpKotlinx_serialization_coreSerialKindCONTEXTUAL, SpaydkmpKotlinx_serialization_coreSerialKind, SpaydkmpKotlinx_serialization_corePrimitiveKindSTRING, SpaydkmpKotlinx_serialization_corePrimitiveKindSHORT, SpaydkmpKotlinx_serialization_corePrimitiveKindLONG, SpaydkmpKotlinx_serialization_corePrimitiveKindINT, SpaydkmpKotlinx_serialization_corePrimitiveKindFLOAT, SpaydkmpKotlinx_serialization_corePrimitiveKindDOUBLE, SpaydkmpKotlinx_serialization_corePrimitiveKindCHAR, SpaydkmpKotlinx_serialization_corePrimitiveKindBYTE, SpaydkmpKotlinx_serialization_corePrimitiveKindBOOLEAN, SpaydkmpKotlinx_serialization_corePrimitiveKind, SpaydkmpKotlinx_serialization_corePolymorphicKindSEALED, SpaydkmpKotlinx_serialization_corePolymorphicKindOPEN, SpaydkmpKotlinx_serialization_corePolymorphicKind, SpaydkmpKotlinx_datetimePadding, SpaydkmpKotlinx_datetimeMonthNamesCompanion, SpaydkmpKotlinx_datetimeMonthNames, SpaydkmpKotlinx_datetimeMonth, SpaydkmpKotlinx_datetimeLocalDateCompanion, SpaydkmpKotlinx_datetimeLocalDate, SpaydkmpKotlinx_datetimeDayOfWeekNamesCompanion, SpaydkmpKotlinx_datetimeDayOfWeekNames, SpaydkmpKotlinx_datetimeDayOfWeek, SpaydkmpKotlinThrowable, SpaydkmpKotlinRuntimeException, SpaydkmpKotlinPair<A, B>, SpaydkmpKotlinNothing, SpaydkmpKotlinIllegalStateException, SpaydkmpKotlinException, SpaydkmpKotlinEnumCompanion, SpaydkmpKotlinEnum<E>, SpaydkmpKotlinCharIterator, SpaydkmpKotlinCharArray, SpaydkmpKotlinCancellationException, SpaydkmpKotlinArray<T>, SpaydkmpKey, SpaydkmpInt, SpaydkmpIBAN, SpaydkmpFormatterCompanion, SpaydkmpFormatter, SpaydkmpFormatTokenCompanion, SpaydkmpFormatToken, SpaydkmpFloat, SpaydkmpDouble, SpaydkmpCharArrayBuffer, SpaydkmpByte, SpaydkmpBufferCompanion, SpaydkmpBuffer, SpaydkmpBoolean, SpaydkmpBase, SpaydkmpAccountList, SpaydkmpAccount, NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>;
+@class Spaydkmp__SkieTypeExportsKt, Spaydkmp__SkieSuspendWrappersKt, SpaydkmpValidationException, SpaydkmpUShort, SpaydkmpULong, SpaydkmpUInt, SpaydkmpUByte, SpaydkmpTransformer, SpaydkmpSpaydCompanion, SpaydkmpSpayd, SpaydkmpSkie_SuspendResultSuccess, SpaydkmpSkie_SuspendResultError, SpaydkmpSkie_SuspendResultCanceled, SpaydkmpSkie_SuspendResult, SpaydkmpSkie_SuspendHandler, SpaydkmpSkie_CancellationHandler, SpaydkmpSkieKotlinStateFlow<T>, SpaydkmpSkieKotlinSharedFlow<T>, SpaydkmpSkieKotlinOptionalStateFlow<T>, SpaydkmpSkieKotlinOptionalSharedFlow<T>, SpaydkmpSkieKotlinOptionalMutableStateFlow<T>, SpaydkmpSkieKotlinOptionalMutableSharedFlow<T>, SpaydkmpSkieKotlinOptionalFlow<T>, SpaydkmpSkieKotlinMutableStateFlow<T>, SpaydkmpSkieKotlinMutableSharedFlow<T>, SpaydkmpSkieKotlinFlow<T>, SpaydkmpSkieColdFlowIterator<E>, SpaydkmpShort, SpaydkmpPaymentType, SpaydkmpParserStateMachineCompanion, SpaydkmpParserStateMachine, SpaydkmpNumber, SpaydkmpNotificationType, SpaydkmpMutableSet<ObjectType>, SpaydkmpMutableDictionary<KeyType, ObjectType>, SpaydkmpLong, SpaydkmpKotlinx_serialization_coreStructureKindOBJECT, SpaydkmpKotlinx_serialization_coreStructureKindMAP, SpaydkmpKotlinx_serialization_coreStructureKindLIST, SpaydkmpKotlinx_serialization_coreStructureKindCLASS, SpaydkmpKotlinx_serialization_coreStructureKind, SpaydkmpKotlinx_serialization_coreSerializersModule, SpaydkmpKotlinx_serialization_coreSerialKindENUM, SpaydkmpKotlinx_serialization_coreSerialKindCONTEXTUAL, SpaydkmpKotlinx_serialization_coreSerialKind, SpaydkmpKotlinx_serialization_corePrimitiveKindSTRING, SpaydkmpKotlinx_serialization_corePrimitiveKindSHORT, SpaydkmpKotlinx_serialization_corePrimitiveKindLONG, SpaydkmpKotlinx_serialization_corePrimitiveKindINT, SpaydkmpKotlinx_serialization_corePrimitiveKindFLOAT, SpaydkmpKotlinx_serialization_corePrimitiveKindDOUBLE, SpaydkmpKotlinx_serialization_corePrimitiveKindCHAR, SpaydkmpKotlinx_serialization_corePrimitiveKindBYTE, SpaydkmpKotlinx_serialization_corePrimitiveKindBOOLEAN, SpaydkmpKotlinx_serialization_corePrimitiveKind, SpaydkmpKotlinx_serialization_corePolymorphicKindSEALED, SpaydkmpKotlinx_serialization_corePolymorphicKindOPEN, SpaydkmpKotlinx_serialization_corePolymorphicKind, SpaydkmpKotlinx_datetimePadding, SpaydkmpKotlinx_datetimeMonthNamesCompanion, SpaydkmpKotlinx_datetimeMonthNames, SpaydkmpKotlinx_datetimeMonth, SpaydkmpKotlinx_datetimeLocalDateCompanion, SpaydkmpKotlinx_datetimeLocalDate, SpaydkmpKotlinx_datetimeDayOfWeekNamesCompanion, SpaydkmpKotlinx_datetimeDayOfWeekNames, SpaydkmpKotlinx_datetimeDayOfWeek, SpaydkmpKotlinThrowable, SpaydkmpKotlinRuntimeException, SpaydkmpKotlinPair<A, B>, SpaydkmpKotlinNothing, SpaydkmpKotlinIllegalStateException, SpaydkmpKotlinException, SpaydkmpKotlinEnumCompanion, SpaydkmpKotlinEnum<E>, SpaydkmpKotlinCharIterator, SpaydkmpKotlinCharArray, SpaydkmpKotlinCancellationException, SpaydkmpKotlinByteIterator, SpaydkmpKotlinByteArray, SpaydkmpKotlinArray<T>, SpaydkmpKey, SpaydkmpInt, SpaydkmpIBAN, SpaydkmpFormatterCompanion, SpaydkmpFormatter, SpaydkmpFormatTokenCompanion, SpaydkmpFormatToken, SpaydkmpFloat, SpaydkmpDouble, SpaydkmpCharArrayBuffer, SpaydkmpByte, SpaydkmpBufferCompanion, SpaydkmpBuffer, SpaydkmpBoolean, SpaydkmpBignumSign, SpaydkmpBignumRoundingMode, SpaydkmpBignumModularQuotientAndRemainder, SpaydkmpBignumModularBigIntegerCompanion, SpaydkmpBignumModularBigInteger, SpaydkmpBignumDecimalModeCompanion, SpaydkmpBignumDecimalMode, SpaydkmpBignumBigIntegerSqareRootAndRemainder, SpaydkmpBignumBigIntegerQuotientAndRemainder, SpaydkmpBignumBigIntegerCompanion, SpaydkmpBignumBigIntegerBigIntegerRange, SpaydkmpBignumBigInteger, SpaydkmpBignumBigDecimalCompanion, SpaydkmpBignumBigDecimal, SpaydkmpBase, SpaydkmpBankAccountList, SpaydkmpBankAccount, NSString, NSSet<ObjectType>, NSObject, NSNumber, NSMutableSet<ObjectType>, NSMutableDictionary<KeyType, ObjectType>, NSMutableArray<ObjectType>, NSError, NSDictionary<KeyType, ObjectType>, NSArray<ObjectType>;
 
-@protocol SpaydkmpSkie_DispatcherDelegate, SpaydkmpKotlinx_serialization_coreSerializersModuleCollector, SpaydkmpKotlinx_serialization_coreSerializationStrategy, SpaydkmpKotlinx_serialization_coreSerialDescriptor, SpaydkmpKotlinx_serialization_coreKSerializer, SpaydkmpKotlinx_serialization_coreEncoder, SpaydkmpKotlinx_serialization_coreDeserializationStrategy, SpaydkmpKotlinx_serialization_coreDecoder, SpaydkmpKotlinx_serialization_coreCompositeEncoder, SpaydkmpKotlinx_serialization_coreCompositeDecoder, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithUtcOffset, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithTime, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithDateTime, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithDate, SpaydkmpKotlinx_datetimeDateTimeFormatBuilder, SpaydkmpKotlinx_datetimeDateTimeFormat, SpaydkmpKotlinx_coroutines_coreStateFlow, SpaydkmpKotlinx_coroutines_coreSharedFlow, SpaydkmpKotlinx_coroutines_coreRunnable, SpaydkmpKotlinx_coroutines_coreMutableStateFlow, SpaydkmpKotlinx_coroutines_coreMutableSharedFlow, SpaydkmpKotlinx_coroutines_coreFlowCollector, SpaydkmpKotlinx_coroutines_coreFlow, SpaydkmpKotlinKDeclarationContainer, SpaydkmpKotlinKClassifier, SpaydkmpKotlinKClass, SpaydkmpKotlinKAnnotatedElement, SpaydkmpKotlinIterator, SpaydkmpKotlinComparable, SpaydkmpKotlinAppendable, SpaydkmpKotlinAnnotation, NSCopying;
+@protocol SpaydkmpSkie_DispatcherDelegate, SpaydkmpKotlinx_serialization_coreSerializersModuleCollector, SpaydkmpKotlinx_serialization_coreSerializationStrategy, SpaydkmpKotlinx_serialization_coreSerialDescriptor, SpaydkmpKotlinx_serialization_coreKSerializer, SpaydkmpKotlinx_serialization_coreEncoder, SpaydkmpKotlinx_serialization_coreDeserializationStrategy, SpaydkmpKotlinx_serialization_coreDecoder, SpaydkmpKotlinx_serialization_coreCompositeEncoder, SpaydkmpKotlinx_serialization_coreCompositeDecoder, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithUtcOffset, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithTime, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithDateTime, SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithDate, SpaydkmpKotlinx_datetimeDateTimeFormatBuilder, SpaydkmpKotlinx_datetimeDateTimeFormat, SpaydkmpKotlinx_coroutines_coreStateFlow, SpaydkmpKotlinx_coroutines_coreSharedFlow, SpaydkmpKotlinx_coroutines_coreRunnable, SpaydkmpKotlinx_coroutines_coreMutableStateFlow, SpaydkmpKotlinx_coroutines_coreMutableSharedFlow, SpaydkmpKotlinx_coroutines_coreFlowCollector, SpaydkmpKotlinx_coroutines_coreFlow, SpaydkmpKotlinKDeclarationContainer, SpaydkmpKotlinKClassifier, SpaydkmpKotlinKClass, SpaydkmpKotlinKAnnotatedElement, SpaydkmpKotlinIterator, SpaydkmpKotlinIterable, SpaydkmpKotlinComparable, SpaydkmpKotlinClosedRange, SpaydkmpKotlinAppendable, SpaydkmpKotlinAnnotation, SpaydkmpBignumByteArraySerializable, SpaydkmpBignumByteArrayDeserializable, SpaydkmpBignumBitwiseCapable, SpaydkmpBignumBigNumberUtil, SpaydkmpBignumBigNumberCreator, SpaydkmpBignumBigNumber, NSCopying;
 
 // Due to an Obj-C/Swift interop limitation, SKIE cannot generate Swift types with a lambda type argument.
 // Example of such type is: A<() -> Unit> where A<T> is a generic class.
@@ -484,7 +484,7 @@ __attribute__((swift_name("Spayd")))
 @property (class, readonly, getter=companion) SpaydkmpSpaydCompanion *companion __attribute__((swift_name("companion")));
 - (instancetype)initWithParameters:(SpaydkmpKotlinArray<SpaydkmpKotlinPair<SpaydkmpKey *, id> *> *)parameters __attribute__((swift_name("init(parameters:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithParameters_:(NSDictionary<SpaydkmpKey *, id> *)parameters __attribute__((swift_name("init(parameters_:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithAccount:(SpaydkmpAccount *)account alternateAccounts:(SpaydkmpAccountList * _Nullable)alternateAccounts currency:(NSString * _Nullable)currency amount:(SpaydkmpDouble * _Nullable)amount date:(SpaydkmpKotlinx_datetimeLocalDate * _Nullable)date senderReference:(SpaydkmpInt * _Nullable)senderReference recipientName:(NSString * _Nullable)recipientName paymentType:(NSString * _Nullable)paymentType message:(NSString * _Nullable)message notificationType:(SpaydkmpNotificationType * _Nullable)notificationType notificationAddress:(NSString * _Nullable)notificationAddress repeat:(SpaydkmpInt * _Nullable)repeat variableSymbol:(SpaydkmpLong * _Nullable)variableSymbol specificSymbol:(SpaydkmpLong * _Nullable)specificSymbol constantSymbol:(SpaydkmpLong * _Nullable)constantSymbol identifier:(NSString * _Nullable)identifier url:(NSString * _Nullable)url __attribute__((swift_name("init(account:alternateAccounts:currency:amount:date:senderReference:recipientName:paymentType:message:notificationType:notificationAddress:repeat:variableSymbol:specificSymbol:constantSymbol:identifier:url:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithBankAccount:(SpaydkmpBankAccount *)bankAccount alternativeBankAccounts:(SpaydkmpBankAccountList * _Nullable)alternativeBankAccounts currencyCode:(NSString * _Nullable)currencyCode amount:(SpaydkmpBignumBigDecimal * _Nullable)amount dueDate:(SpaydkmpKotlinx_datetimeLocalDate * _Nullable)dueDate referenceForRecipient:(SpaydkmpInt * _Nullable)referenceForRecipient recipientName:(NSString * _Nullable)recipientName paymentType:(SpaydkmpPaymentType * _Nullable)paymentType message:(NSString * _Nullable)message notificationType:(SpaydkmpNotificationType * _Nullable)notificationType notificationAddress:(NSString * _Nullable)notificationAddress daysToRepeatIfUnsuccessfull:(SpaydkmpInt * _Nullable)daysToRepeatIfUnsuccessfull variableSymbol:(SpaydkmpLong * _Nullable)variableSymbol specificSymbol:(SpaydkmpLong * _Nullable)specificSymbol constantSymbol:(SpaydkmpLong * _Nullable)constantSymbol referenceForSender:(NSString * _Nullable)referenceForSender url:(NSString * _Nullable)url __attribute__((swift_name("init(bankAccount:alternativeBankAccounts:currencyCode:amount:dueDate:referenceForRecipient:recipientName:paymentType:message:notificationType:notificationAddress:daysToRepeatIfUnsuccessfull:variableSymbol:specificSymbol:constantSymbol:referenceForSender:url:)"))) __attribute__((objc_designated_initializer));
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
@@ -500,24 +500,24 @@ __attribute__((swift_name("Spayd.Companion")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Account")))
-@interface SpaydkmpAccount : SpaydkmpBase
+__attribute__((swift_name("BankAccount")))
+@interface SpaydkmpBankAccount : SpaydkmpBase
 @property (readonly) NSString * _Nullable bic __attribute__((swift_name("bic")));
 @property (readonly) NSString *iban __attribute__((swift_name("iban")));
 - (instancetype)initWithIban:(NSString *)iban bic:(NSString * _Nullable)bic __attribute__((swift_name("init(iban:bic:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)initWithPrefix:(SpaydkmpLong * _Nullable)prefix account:(int64_t)account bank:(int64_t)bank __attribute__((swift_name("init(prefix:account:bank:)"))) __attribute__((objc_designated_initializer));
-- (SpaydkmpAccount *)doCopyIban:(NSString *)iban bic:(NSString * _Nullable)bic __attribute__((swift_name("doCopy(iban:bic:)")));
+- (SpaydkmpBankAccount *)doCopyIban:(NSString *)iban bic:(NSString * _Nullable)bic __attribute__((swift_name("doCopy(iban:bic:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AccountList")))
-@interface SpaydkmpAccountList : SpaydkmpBase
-@property (readonly) NSArray<SpaydkmpAccount *> *accounts __attribute__((swift_name("accounts")));
-- (instancetype)initWithAccounts:(NSArray<SpaydkmpAccount *> *)accounts __attribute__((swift_name("init(accounts:)"))) __attribute__((objc_designated_initializer));
-- (SpaydkmpAccountList *)doCopyAccounts:(NSArray<SpaydkmpAccount *> *)accounts __attribute__((swift_name("doCopy(accounts:)")));
+__attribute__((swift_name("BankAccountList")))
+@interface SpaydkmpBankAccountList : SpaydkmpBase
+@property (readonly) NSArray<SpaydkmpBankAccount *> *bankAccounts __attribute__((swift_name("bankAccounts")));
+- (instancetype)initWithBankAccounts:(NSArray<SpaydkmpBankAccount *> *)bankAccounts __attribute__((swift_name("init(bankAccounts:)"))) __attribute__((objc_designated_initializer));
+- (SpaydkmpBankAccountList *)doCopyBankAccounts:(NSArray<SpaydkmpBankAccount *> *)bankAccounts __attribute__((swift_name("doCopy(bankAccounts:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -557,22 +557,22 @@ __attribute__((swift_name("KotlinEnum")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Key")))
 @interface SpaydkmpKey : SpaydkmpKotlinEnum<SpaydkmpKey *>
-@property (class, readonly) SpaydkmpKey *date __attribute__((swift_name("date")));
-@property (class, readonly) SpaydkmpKey *currency __attribute__((swift_name("currency")));
+@property (class, readonly) SpaydkmpKey *dueDate __attribute__((swift_name("dueDate")));
+@property (class, readonly) SpaydkmpKey *currencyCode __attribute__((swift_name("currencyCode")));
 @property (class, readonly) SpaydkmpKey *amount __attribute__((swift_name("amount")));
-@property (class, readonly) SpaydkmpKey *account __attribute__((swift_name("account")));
-@property (class, readonly) SpaydkmpKey *alternateAccounts __attribute__((swift_name("alternateAccounts")));
-@property (class, readonly) SpaydkmpKey *senderReference __attribute__((swift_name("senderReference")));
+@property (class, readonly) SpaydkmpKey *bankAccount __attribute__((swift_name("bankAccount")));
+@property (class, readonly) SpaydkmpKey *alternativeBankAccounts __attribute__((swift_name("alternativeBankAccounts")));
+@property (class, readonly) SpaydkmpKey *referenceForRecipient __attribute__((swift_name("referenceForRecipient")));
 @property (class, readonly) SpaydkmpKey *recipientName __attribute__((swift_name("recipientName")));
 @property (class, readonly) SpaydkmpKey *paymentType __attribute__((swift_name("paymentType")));
 @property (class, readonly) SpaydkmpKey *message __attribute__((swift_name("message")));
 @property (class, readonly) SpaydkmpKey *notifyType __attribute__((swift_name("notifyType")));
 @property (class, readonly) SpaydkmpKey *notifyAddress __attribute__((swift_name("notifyAddress")));
-@property (class, readonly) SpaydkmpKey *repeat __attribute__((swift_name("repeat")));
+@property (class, readonly) SpaydkmpKey *daysToRepeatIfUnsuccessful __attribute__((swift_name("daysToRepeatIfUnsuccessful")));
 @property (class, readonly) SpaydkmpKey *variableSymbol __attribute__((swift_name("variableSymbol")));
 @property (class, readonly) SpaydkmpKey *specificSymbol __attribute__((swift_name("specificSymbol")));
 @property (class, readonly) SpaydkmpKey *constantSymbol __attribute__((swift_name("constantSymbol")));
-@property (class, readonly) SpaydkmpKey *identifier __attribute__((swift_name("identifier")));
+@property (class, readonly) SpaydkmpKey *referenceForSender __attribute__((swift_name("referenceForSender")));
 @property (class, readonly) SpaydkmpKey *url __attribute__((swift_name("url")));
 @property (class, readonly) NSArray<SpaydkmpKey *> *entries __attribute__((swift_name("entries")));
 @property (readonly) NSString *key __attribute__((swift_name("key")));
@@ -601,6 +601,19 @@ __attribute__((swift_name("NotificationType")))
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PaymentType")))
+@interface SpaydkmpPaymentType : SpaydkmpKotlinEnum<SpaydkmpPaymentType *>
+@property (class, readonly) SpaydkmpPaymentType *immediatePayment __attribute__((swift_name("immediatePayment")));
+@property (class, readonly) NSArray<SpaydkmpPaymentType *> *entries __attribute__((swift_name("entries")));
+@property (readonly) NSString *key __attribute__((swift_name("key")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (SpaydkmpKotlinArray<SpaydkmpPaymentType *> *)values __attribute__((swift_name("values()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
 __attribute__((swift_name("KotlinThrowable")))
 @interface SpaydkmpKotlinThrowable : SpaydkmpBase
 @property (readonly) SpaydkmpKotlinThrowable * _Nullable cause __attribute__((swift_name("cause")));
@@ -621,18 +634,9 @@ __attribute__((swift_name("KotlinThrowable")))
 - (NSError *)asError __attribute__((swift_name("asError()")));
 @end
 
-__attribute__((swift_name("KotlinException")))
-@interface SpaydkmpKotlinException : SpaydkmpKotlinThrowable
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithCause:(SpaydkmpKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SpaydkmpKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
-@end
-
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ValidationException")))
-@interface SpaydkmpValidationException : SpaydkmpKotlinException
+@interface SpaydkmpValidationException : SpaydkmpKotlinThrowable
 @property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
 - (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
@@ -779,6 +783,15 @@ __attribute__((swift_name("__SkieTypeExportsKt")))
 + (void)skieTypeExports_0P0:(id<SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithDateTime>)p0 p1:(id<SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents>)p1 p2:(id<SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithTime>)p2 p3:(id<SpaydkmpKotlinx_datetimeDateTimeFormatBuilderWithUtcOffset>)p3 p4:(SpaydkmpKotlinx_serialization_corePolymorphicKind *)p4 p5:(SpaydkmpKotlinx_serialization_corePolymorphicKindOPEN *)p5 p6:(SpaydkmpKotlinx_serialization_corePolymorphicKindSEALED *)p6 p7:(SpaydkmpKotlinx_serialization_corePrimitiveKind *)p7 p8:(SpaydkmpKotlinx_serialization_corePrimitiveKindBOOLEAN *)p8 p9:(SpaydkmpKotlinx_serialization_corePrimitiveKindBYTE *)p9 p10:(SpaydkmpKotlinx_serialization_corePrimitiveKindCHAR *)p10 p11:(SpaydkmpKotlinx_serialization_corePrimitiveKindDOUBLE *)p11 p12:(SpaydkmpKotlinx_serialization_corePrimitiveKindFLOAT *)p12 p13:(SpaydkmpKotlinx_serialization_corePrimitiveKindINT *)p13 p14:(SpaydkmpKotlinx_serialization_corePrimitiveKindLONG *)p14 p15:(SpaydkmpKotlinx_serialization_corePrimitiveKindSHORT *)p15 p16:(SpaydkmpKotlinx_serialization_corePrimitiveKindSTRING *)p16 p17:(SpaydkmpKotlinx_serialization_coreSerialKindCONTEXTUAL *)p17 p18:(SpaydkmpKotlinx_serialization_coreSerialKindENUM *)p18 p19:(SpaydkmpKotlinx_serialization_coreStructureKind *)p19 p20:(SpaydkmpKotlinx_serialization_coreStructureKindCLASS *)p20 p21:(SpaydkmpKotlinx_serialization_coreStructureKindLIST *)p21 p22:(SpaydkmpKotlinx_serialization_coreStructureKindMAP *)p22 p23:(SpaydkmpKotlinx_serialization_coreStructureKindOBJECT *)p23 __attribute__((swift_name("skieTypeExports_0(p0:p1:p2:p3:p4:p5:p6:p7:p8:p9:p10:p11:p12:p13:p14:p15:p16:p17:p18:p19:p20:p21:p22:p23:)")));
 @end
 
+__attribute__((swift_name("KotlinException")))
+@interface SpaydkmpKotlinException : SpaydkmpKotlinThrowable
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithMessage:(NSString * _Nullable)message __attribute__((swift_name("init(message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCause:(SpaydkmpKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMessage:(NSString * _Nullable)message cause:(SpaydkmpKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(message:cause:)"))) __attribute__((objc_designated_initializer));
+@end
+
 __attribute__((swift_name("KotlinRuntimeException")))
 @interface SpaydkmpKotlinRuntimeException : SpaydkmpKotlinException
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -839,6 +852,106 @@ __attribute__((swift_name("KotlinArray")))
 - (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
 - (id<SpaydkmpKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
 - (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@end
+
+__attribute__((swift_name("BignumBigNumber")))
+@protocol SpaydkmpBignumBigNumber
+@required
+- (id<SpaydkmpBignumBigNumber>)abs __attribute__((swift_name("abs()")));
+- (id<SpaydkmpBignumBigNumber>)addOther:(id<SpaydkmpBignumBigNumber>)other __attribute__((swift_name("add(other:)")));
+- (int32_t)compareToOther_:(id)other __attribute__((swift_name("compareTo(other_:)")));
+- (id<SpaydkmpBignumBigNumber>)divideOther:(id<SpaydkmpBignumBigNumber>)other __attribute__((swift_name("divide(other:)")));
+- (SpaydkmpKotlinPair<id<SpaydkmpBignumBigNumber>, id<SpaydkmpBignumBigNumber>> *)divideAndRemainderOther:(id<SpaydkmpBignumBigNumber>)other __attribute__((swift_name("divideAndRemainder(other:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)getCreator __attribute__((swift_name("getCreator()")));
+- (BOOL)isZero __attribute__((swift_name("isZero()")));
+- (id<SpaydkmpBignumBigNumber>)multiplyOther:(id<SpaydkmpBignumBigNumber>)other __attribute__((swift_name("multiply(other:)")));
+- (id<SpaydkmpBignumBigNumber>)negate __attribute__((swift_name("negate()")));
+- (int64_t)numberOfDecimalDigits __attribute__((swift_name("numberOfDecimalDigits()")));
+- (id<SpaydkmpBignumBigNumber>)powExponent:(int32_t)exponent __attribute__((swift_name("pow(exponent:)")));
+- (id<SpaydkmpBignumBigNumber>)powExponent_:(int64_t)exponent __attribute__((swift_name("pow(exponent_:)")));
+- (id<SpaydkmpBignumBigNumber>)remainderOther:(id<SpaydkmpBignumBigNumber>)other __attribute__((swift_name("remainder(other:)")));
+- (void)secureOverwrite __attribute__((swift_name("secureOverwrite()")));
+- (int32_t)signum __attribute__((swift_name("signum()")));
+- (id<SpaydkmpBignumBigNumber>)subtractOther:(id<SpaydkmpBignumBigNumber>)other __attribute__((swift_name("subtract(other:)")));
+- (NSString *)toStringBase:(int32_t)base __attribute__((swift_name("toString(base:)")));
+- (id<SpaydkmpBignumBigNumber>)unaryMinus __attribute__((swift_name("unaryMinus()")));
+@property (readonly) BOOL isNegative __attribute__((swift_name("isNegative")));
+@property (readonly) BOOL isPositive __attribute__((swift_name("isPositive")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumBigDecimal")))
+@interface SpaydkmpBignumBigDecimal : SpaydkmpBase <SpaydkmpBignumBigNumber, SpaydkmpKotlinComparable>
+@property (class, readonly, getter=companion) SpaydkmpBignumBigDecimalCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) SpaydkmpBignumDecimalMode * _Nullable decimalMode __attribute__((swift_name("decimalMode")));
+@property (readonly) int64_t exponent __attribute__((swift_name("exponent")));
+@property (readonly) int64_t precision __attribute__((swift_name("precision")));
+@property (readonly) int64_t precisionLimit __attribute__((swift_name("precisionLimit")));
+@property (readonly) SpaydkmpBignumRoundingMode *roundingMode __attribute__((swift_name("roundingMode")));
+@property (readonly) int64_t scale __attribute__((swift_name("scale")));
+@property (readonly) SpaydkmpBignumBigInteger *significand __attribute__((swift_name("significand")));
+@property (readonly) BOOL usingScale __attribute__((swift_name("usingScale")));
+- (SpaydkmpBignumBigDecimal *)abs __attribute__((swift_name("abs()")));
+- (SpaydkmpBignumBigDecimal *)addOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("add(other:)")));
+- (SpaydkmpBignumBigDecimal *)addOther:(SpaydkmpBignumBigDecimal *)other decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("add(other:decimalMode:)")));
+- (int8_t)byteValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("byteValue(exactRequired:)")));
+- (SpaydkmpBignumBigDecimal *)ceil __attribute__((swift_name("ceil()")));
+- (int32_t)compareOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("compare(other:)")));
+- (int32_t)compareToOther:(id)other __attribute__((swift_name("compareTo(other:)")));
+- (int32_t)compareToOther_:(id)other __attribute__((swift_name("compareTo(other_:)")));
+- (SpaydkmpBignumBigDecimal *)doCopySignificand:(SpaydkmpBignumBigInteger *)significand exponent:(int64_t)exponent decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("doCopy(significand:exponent:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)dec __attribute__((swift_name("dec()")));
+- (SpaydkmpBignumBigDecimal *)divOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("div(other:)")));
+- (SpaydkmpBignumBigDecimal *)divideOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("divide(other:)")));
+- (SpaydkmpBignumBigDecimal *)divideOther:(SpaydkmpBignumBigDecimal *)other decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("divide(other:decimalMode:)")));
+- (SpaydkmpKotlinPair<SpaydkmpBignumBigDecimal *, SpaydkmpBignumBigDecimal *> *)divideAndRemainderOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("divideAndRemainder(other:)")));
+- (SpaydkmpKotlinPair<SpaydkmpBignumBigDecimal *, SpaydkmpBignumBigDecimal *> *)divremOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("divrem(other:)")));
+- (double)doubleValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("doubleValue(exactRequired:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (float)floatValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("floatValue(exactRequired:)")));
+- (SpaydkmpBignumBigDecimal *)floor __attribute__((swift_name("floor()")));
+- (id<SpaydkmpBignumBigNumberCreator>)getCreator __attribute__((swift_name("getCreator()")));
+- (SpaydkmpBignumBigDecimal *)getInstance __attribute__((swift_name("getInstance()")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (SpaydkmpBignumBigDecimal *)inc __attribute__((swift_name("inc()")));
+- (int32_t)intValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("intValue(exactRequired:)")));
+- (BOOL)isWholeNumber __attribute__((swift_name("isWholeNumber()")));
+- (BOOL)isZero __attribute__((swift_name("isZero()")));
+- (int64_t)longValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("longValue(exactRequired:)")));
+- (SpaydkmpBignumBigDecimal *)minusOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("minus(other:)")));
+- (SpaydkmpBignumBigDecimal *)moveDecimalPointPlaces:(int32_t)places __attribute__((swift_name("moveDecimalPoint(places:)")));
+- (SpaydkmpBignumBigDecimal *)moveDecimalPointPlaces_:(int64_t)places __attribute__((swift_name("moveDecimalPoint(places_:)")));
+- (SpaydkmpBignumBigDecimal *)multiplyOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("multiply(other:)")));
+- (SpaydkmpBignumBigDecimal *)multiplyOther:(SpaydkmpBignumBigDecimal *)other decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("multiply(other:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)negate __attribute__((swift_name("negate()")));
+- (int64_t)numberOfDecimalDigits __attribute__((swift_name("numberOfDecimalDigits()")));
+- (SpaydkmpBignumBigDecimal *)plusOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("plus(other:)")));
+- (SpaydkmpBignumBigDecimal *)powExponent:(int32_t)exponent __attribute__((swift_name("pow(exponent:)")));
+- (SpaydkmpBignumBigDecimal *)powExponent_:(int64_t)exponent __attribute__((swift_name("pow(exponent_:)")));
+- (SpaydkmpBignumBigDecimal *)remOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("rem(other:)")));
+- (SpaydkmpBignumBigDecimal *)remainderOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("remainder(other:)")));
+- (SpaydkmpBignumBigDecimal *)removeScale __attribute__((swift_name("removeScale()")));
+- (SpaydkmpBignumBigDecimal *)roundSignificandDecimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("roundSignificand(decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)roundToDigitPositionDigitPosition:(int64_t)digitPosition roundingMode:(SpaydkmpBignumRoundingMode *)roundingMode __attribute__((swift_name("roundToDigitPosition(digitPosition:roundingMode:)")));
+- (SpaydkmpBignumBigDecimal *)roundToDigitPositionAfterDecimalPointDigitPosition:(int64_t)digitPosition roundingMode:(SpaydkmpBignumRoundingMode *)roundingMode __attribute__((swift_name("roundToDigitPositionAfterDecimalPoint(digitPosition:roundingMode:)")));
+- (SpaydkmpBignumBigDecimal *)scaleScale:(int64_t)scale __attribute__((swift_name("scale(scale:)")));
+- (void)secureOverwrite __attribute__((swift_name("secureOverwrite()")));
+- (int16_t)shortValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("shortValue(exactRequired:)")));
+- (int32_t)signum __attribute__((swift_name("signum()")));
+- (SpaydkmpBignumBigDecimal *)subtractOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("subtract(other:)")));
+- (SpaydkmpBignumBigDecimal *)subtractOther:(SpaydkmpBignumBigDecimal *)other decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("subtract(other:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)timesOther:(SpaydkmpBignumBigDecimal *)other __attribute__((swift_name("times(other:)")));
+- (NSString *)times:(int64_t)receiver char:(unichar)char_ __attribute__((swift_name("times(_:char:)")));
+- (SpaydkmpBignumBigInteger *)toBigInteger __attribute__((swift_name("toBigInteger()")));
+- (NSString *)toPlainString __attribute__((swift_name("toPlainString()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+- (NSString *)toStringBase:(int32_t)base __attribute__((swift_name("toString(base:)")));
+- (NSString *)toStringExpanded __attribute__((swift_name("toStringExpanded()")));
+- (uint8_t)ubyteValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("ubyteValue(exactRequired:)")));
+- (uint32_t)uintValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("uintValue(exactRequired:)")));
+- (uint64_t)ulongValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("ulongValue(exactRequired:)")));
+- (SpaydkmpBignumBigDecimal *)unaryMinus __attribute__((swift_name("unaryMinus()")));
+- (uint16_t)ushortValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("ushortValue(exactRequired:)")));
 @end
 
 
@@ -1176,6 +1289,209 @@ __attribute__((swift_name("KotlinIterator")))
 - (id _Nullable)next __attribute__((swift_name("next()")));
 @end
 
+__attribute__((swift_name("BignumBigNumberCreator")))
+@protocol SpaydkmpBignumBigNumberCreator
+@required
+- (id _Nullable)fromBigIntegerBigInteger:(SpaydkmpBignumBigInteger *)bigInteger __attribute__((swift_name("fromBigInteger(bigInteger:)")));
+- (id _Nullable)fromByteByte:(int8_t)byte __attribute__((swift_name("fromByte(byte:)")));
+- (id _Nullable)fromIntInt:(int32_t)int_ __attribute__((swift_name("fromInt(int:)")));
+- (id _Nullable)fromLongLong:(int64_t)long_ __attribute__((swift_name("fromLong(long:)")));
+- (id _Nullable)fromShortShort:(int16_t)short_ __attribute__((swift_name("fromShort(short:)")));
+- (id _Nullable)fromUByteUByte:(uint8_t)uByte __attribute__((swift_name("fromUByte(uByte:)")));
+- (id _Nullable)fromUIntUInt:(uint32_t)uInt __attribute__((swift_name("fromUInt(uInt:)")));
+- (id _Nullable)fromULongULong:(uint64_t)uLong __attribute__((swift_name("fromULong(uLong:)")));
+- (id _Nullable)fromUShortUShort:(uint16_t)uShort __attribute__((swift_name("fromUShort(uShort:)")));
+- (id _Nullable)parseStringString:(NSString *)string base:(int32_t)base __attribute__((swift_name("parseString(string:base:)")));
+- (id _Nullable)tryFromDoubleDouble:(double)double_ exactRequired:(BOOL)exactRequired __attribute__((swift_name("tryFromDouble(double:exactRequired:)")));
+- (id _Nullable)tryFromFloatFloat:(float)float_ exactRequired:(BOOL)exactRequired __attribute__((swift_name("tryFromFloat(float:exactRequired:)")));
+@property (readonly) id _Nullable ONE __attribute__((swift_name("ONE")));
+@property (readonly) id _Nullable TEN __attribute__((swift_name("TEN")));
+@property (readonly) id _Nullable TWO __attribute__((swift_name("TWO")));
+@property (readonly) id _Nullable ZERO __attribute__((swift_name("ZERO")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumBigDecimal.Companion")))
+@interface SpaydkmpBignumBigDecimalCompanion : SpaydkmpBase <SpaydkmpBignumBigNumberCreator>
+@property (class, readonly, getter=shared) SpaydkmpBignumBigDecimalCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) SpaydkmpBignumBigDecimal *ONE __attribute__((swift_name("ONE")));
+@property (readonly) SpaydkmpBignumBigDecimal *TEN __attribute__((swift_name("TEN")));
+@property (readonly) SpaydkmpBignumBigDecimal *TWO __attribute__((swift_name("TWO")));
+@property (readonly) SpaydkmpBignumBigDecimal *ZERO __attribute__((swift_name("ZERO")));
+@property BOOL useToStringExpanded __attribute__((swift_name("useToStringExpanded")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (SpaydkmpBignumBigDecimal *)fromBigDecimalBigDecimal:(SpaydkmpBignumBigDecimal *)bigDecimal decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromBigDecimal(bigDecimal:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromBigIntegerBigInteger:(SpaydkmpBignumBigInteger *)bigInteger __attribute__((swift_name("fromBigInteger(bigInteger:)")));
+- (SpaydkmpBignumBigDecimal *)fromBigIntegerBigInteger:(SpaydkmpBignumBigInteger *)bigInteger decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromBigInteger(bigInteger:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromBigIntegerWithExponentBigInteger:(SpaydkmpBignumBigInteger *)bigInteger exponent:(int64_t)exponent decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromBigIntegerWithExponent(bigInteger:exponent:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromByteByte:(int8_t)byte __attribute__((swift_name("fromByte(byte:)")));
+- (SpaydkmpBignumBigDecimal *)fromByteByte:(int8_t)byte decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromByte(byte:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromByteAsSignificandByte:(int8_t)byte decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromByteAsSignificand(byte:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromByteWithExponentByte:(int8_t)byte exponent:(int64_t)exponent decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromByteWithExponent(byte:exponent:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromDoubleDouble:(double)double_ decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromDouble(double:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromFloatFloat:(float)float_ decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromFloat(float:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromIntInt:(int32_t)int_ __attribute__((swift_name("fromInt(int:)")));
+- (SpaydkmpBignumBigDecimal *)fromIntInt:(int32_t)int_ decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromInt(int:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromIntAsSignificandInt:(int32_t)int_ decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromIntAsSignificand(int:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromIntWithExponentInt:(int32_t)int_ exponent:(int64_t)exponent decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromIntWithExponent(int:exponent:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromLongLong:(int64_t)long_ __attribute__((swift_name("fromLong(long:)")));
+- (SpaydkmpBignumBigDecimal *)fromLongLong:(int64_t)long_ decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromLong(long:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromLongAsSignificandLong:(int64_t)long_ decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromLongAsSignificand(long:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromLongWithExponentLong:(int64_t)long_ exponent:(int64_t)exponent decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromLongWithExponent(long:exponent:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromShortShort:(int16_t)short_ __attribute__((swift_name("fromShort(short:)")));
+- (SpaydkmpBignumBigDecimal *)fromShortShort:(int16_t)short_ decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromShort(short:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromShortAsSignificandShort:(int16_t)short_ decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromShortAsSignificand(short:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromShortWithExponentShort:(int16_t)short_ exponent:(int64_t)exponent decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromShortWithExponent(short:exponent:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromUByteUByte:(uint8_t)uByte __attribute__((swift_name("fromUByte(uByte:)")));
+- (SpaydkmpBignumBigDecimal *)fromUByteUByte:(uint8_t)uByte decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromUByte(uByte:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromUIntUInt:(uint32_t)uInt __attribute__((swift_name("fromUInt(uInt:)")));
+- (SpaydkmpBignumBigDecimal *)fromUIntUInt:(uint32_t)uInt decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromUInt(uInt:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromULongULong:(uint64_t)uLong __attribute__((swift_name("fromULong(uLong:)")));
+- (SpaydkmpBignumBigDecimal *)fromULongULong:(uint64_t)uLong decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromULong(uLong:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)fromUShortUShort:(uint16_t)uShort __attribute__((swift_name("fromUShort(uShort:)")));
+- (SpaydkmpBignumBigDecimal *)fromUShortUShort:(uint16_t)uShort decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("fromUShort(uShort:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)handleZeroRoundingSignificand:(SpaydkmpBignumBigInteger *)significand exponent:(int64_t)exponent decimalMode:(SpaydkmpBignumDecimalMode *)decimalMode __attribute__((swift_name("handleZeroRounding(significand:exponent:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)parseStringString:(NSString *)string __attribute__((swift_name("parseString(string:)")));
+- (SpaydkmpBignumBigDecimal *)parseStringString:(NSString *)string base:(int32_t)base __attribute__((swift_name("parseString(string:base:)")));
+- (SpaydkmpBignumBigDecimal *)parseStringWithModeFloatingPointString:(NSString *)floatingPointString decimalMode:(SpaydkmpBignumDecimalMode * _Nullable)decimalMode __attribute__((swift_name("parseStringWithMode(floatingPointString:decimalMode:)")));
+- (SpaydkmpBignumBigDecimal *)tryFromDoubleDouble:(double)double_ exactRequired:(BOOL)exactRequired __attribute__((swift_name("tryFromDouble(double:exactRequired:)")));
+- (SpaydkmpBignumBigDecimal *)tryFromFloatFloat:(float)float_ exactRequired:(BOOL)exactRequired __attribute__((swift_name("tryFromFloat(float:exactRequired:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumDecimalMode")))
+@interface SpaydkmpBignumDecimalMode : SpaydkmpBase
+@property (class, readonly, getter=companion) SpaydkmpBignumDecimalModeCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) int64_t decimalPrecision __attribute__((swift_name("decimalPrecision")));
+@property (readonly) BOOL isPrecisionUnlimited __attribute__((swift_name("isPrecisionUnlimited")));
+@property (readonly) SpaydkmpBignumRoundingMode *roundingMode __attribute__((swift_name("roundingMode")));
+@property (readonly) int64_t scale __attribute__((swift_name("scale")));
+@property (readonly) BOOL usingScale __attribute__((swift_name("usingScale")));
+- (instancetype)initWithDecimalPrecision:(int64_t)decimalPrecision roundingMode:(SpaydkmpBignumRoundingMode *)roundingMode scale:(int64_t)scale __attribute__((swift_name("init(decimalPrecision:roundingMode:scale:)"))) __attribute__((objc_designated_initializer));
+- (SpaydkmpBignumDecimalMode *)doCopyDecimalPrecision:(int64_t)decimalPrecision roundingMode:(SpaydkmpBignumRoundingMode *)roundingMode scale:(int64_t)scale __attribute__((swift_name("doCopy(decimalPrecision:roundingMode:scale:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((swift_name("BignumBitwiseCapable")))
+@protocol SpaydkmpBignumBitwiseCapable
+@required
+- (id _Nullable)andOther:(id _Nullable)other __attribute__((swift_name("and(other:)")));
+- (BOOL)bitAtPosition:(int64_t)position __attribute__((swift_name("bitAt(position:)")));
+- (int32_t)bitLength __attribute__((swift_name("bitLength()")));
+- (id _Nullable)not __attribute__((swift_name("not()")));
+- (id _Nullable)orOther:(id _Nullable)other __attribute__((swift_name("or(other:)")));
+- (id _Nullable)setBitAtPosition:(int64_t)position bit:(BOOL)bit __attribute__((swift_name("setBitAt(position:bit:)")));
+- (id _Nullable)shlPlaces:(int32_t)places __attribute__((swift_name("shl(places:)")));
+- (id _Nullable)shrPlaces:(int32_t)places __attribute__((swift_name("shr(places:)")));
+- (id _Nullable)xorOther:(id _Nullable)other __attribute__((swift_name("xor(other:)")));
+@end
+
+__attribute__((swift_name("BignumByteArraySerializable")))
+@protocol SpaydkmpBignumByteArraySerializable
+@required
+- (SpaydkmpKotlinByteArray *)toByteArray __attribute__((swift_name("toByteArray()")));
+- (id)toUByteArray __attribute__((swift_name("toUByteArray()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumBigInteger")))
+@interface SpaydkmpBignumBigInteger : SpaydkmpBase <SpaydkmpBignumBigNumber, SpaydkmpBignumBitwiseCapable, SpaydkmpKotlinComparable, SpaydkmpBignumByteArraySerializable>
+@property (class, readonly, getter=companion) SpaydkmpBignumBigIntegerCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) int32_t numberOfWords __attribute__((swift_name("numberOfWords")));
+@property NSString * _Nullable stringRepresentation __attribute__((swift_name("stringRepresentation")));
+- (instancetype)initWithByte:(int8_t)byte __attribute__((swift_name("init(byte:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithInt:(int32_t)int_ __attribute__((swift_name("init(int:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithLong:(int64_t)long_ __attribute__((swift_name("init(long:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithShort:(int16_t)short_ __attribute__((swift_name("init(short:)"))) __attribute__((objc_designated_initializer));
+- (SpaydkmpBignumBigInteger *)abs __attribute__((swift_name("abs()")));
+- (SpaydkmpBignumBigInteger *)addOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("add(other:)")));
+- (SpaydkmpBignumBigInteger *)andOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("and(other:)")));
+- (BOOL)bitAtPosition:(int64_t)position __attribute__((swift_name("bitAt(position:)")));
+- (int32_t)bitLength __attribute__((swift_name("bitLength()")));
+- (int8_t)byteValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("byteValue(exactRequired:)")));
+- (int32_t)compareOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("compare(other:)")));
+- (int32_t)compareDoubleAndBigIntDouble:(double)double_ comparisonBlock:(SpaydkmpInt *(^)(SpaydkmpBignumBigInteger *))comparisonBlock __attribute__((swift_name("compareDoubleAndBigInt(double:comparisonBlock:)")));
+- (int32_t)compareFloatAndBigIntFloat:(float)float_ comparisonBlock:(SpaydkmpInt *(^)(SpaydkmpBignumBigInteger *))comparisonBlock __attribute__((swift_name("compareFloatAndBigInt(float:comparisonBlock:)")));
+- (int32_t)compareToOther:(id)other __attribute__((swift_name("compareTo(other:)")));
+- (int32_t)compareToOther_:(id)other __attribute__((swift_name("compareTo(other_:)")));
+- (SpaydkmpBignumBigInteger *)dec __attribute__((swift_name("dec()")));
+- (SpaydkmpBignumBigInteger *)divideOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("divide(other:)")));
+- (SpaydkmpKotlinPair<SpaydkmpBignumBigInteger *, SpaydkmpBignumBigInteger *> *)divideAndRemainderOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("divideAndRemainder(other:)")));
+- (SpaydkmpBignumBigIntegerQuotientAndRemainder *)divremOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("divrem(other:)")));
+- (double)doubleValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("doubleValue(exactRequired:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (SpaydkmpBignumBigInteger *)factorial __attribute__((swift_name("factorial()")));
+- (float)floatValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("floatValue(exactRequired:)")));
+- (SpaydkmpBignumBigInteger *)gcdOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("gcd(other:)")));
+- (id)getBackingArrayCopy __attribute__((swift_name("getBackingArrayCopy()")));
+- (id<SpaydkmpBignumBigNumberCreator>)getCreator __attribute__((swift_name("getCreator()")));
+- (SpaydkmpBignumBigInteger *)getInstance __attribute__((swift_name("getInstance()")));
+- (SpaydkmpBignumSign *)getSign __attribute__((swift_name("getSign()")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (SpaydkmpBignumBigInteger *)inc __attribute__((swift_name("inc()")));
+- (int32_t)intValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("intValue(exactRequired:)")));
+- (BOOL)isZero __attribute__((swift_name("isZero()")));
+- (int64_t)longValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("longValue(exactRequired:)")));
+- (SpaydkmpBignumBigInteger *)modModulo:(SpaydkmpBignumBigInteger *)modulo __attribute__((swift_name("mod(modulo:)")));
+- (SpaydkmpBignumBigInteger *)modInverseModulo:(SpaydkmpBignumBigInteger *)modulo __attribute__((swift_name("modInverse(modulo:)")));
+- (SpaydkmpBignumBigInteger *)multiplyOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("multiply(other:)")));
+- (SpaydkmpBignumBigInteger *)negate __attribute__((swift_name("negate()")));
+- (SpaydkmpBignumBigInteger *)not __attribute__((swift_name("not()")));
+- (int64_t)numberOfDecimalDigits __attribute__((swift_name("numberOfDecimalDigits()")));
+- (SpaydkmpBignumBigInteger *)orOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("or(other:)")));
+- (SpaydkmpBignumBigInteger *)powExponent__:(SpaydkmpBignumBigInteger *)exponent __attribute__((swift_name("pow(exponent__:)")));
+- (SpaydkmpBignumBigInteger *)powExponent:(int32_t)exponent __attribute__((swift_name("pow(exponent:)")));
+- (SpaydkmpBignumBigInteger *)powExponent_:(int64_t)exponent __attribute__((swift_name("pow(exponent_:)")));
+- (SpaydkmpBignumBigIntegerBigIntegerRange *)rangeToOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("rangeTo(other:)")));
+- (SpaydkmpBignumBigInteger *)remainderOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("remainder(other:)")));
+- (void)secureOverwrite __attribute__((swift_name("secureOverwrite()")));
+- (SpaydkmpBignumBigInteger *)setBitAtPosition:(int64_t)position bit:(BOOL)bit __attribute__((swift_name("setBitAt(position:bit:)")));
+- (SpaydkmpBignumBigInteger *)shlPlaces:(int32_t)places __attribute__((swift_name("shl(places:)")));
+- (int16_t)shortValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("shortValue(exactRequired:)")));
+- (SpaydkmpBignumBigInteger *)shrPlaces:(int32_t)places __attribute__((swift_name("shr(places:)")));
+- (int32_t)signum __attribute__((swift_name("signum()")));
+- (SpaydkmpBignumBigInteger *)sqrt __attribute__((swift_name("sqrt()")));
+- (SpaydkmpBignumBigIntegerSqareRootAndRemainder *)sqrtAndRemainder __attribute__((swift_name("sqrtAndRemainder()")));
+- (SpaydkmpBignumBigInteger *)subtractOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("subtract(other:)")));
+- (NSString *)timesChar:(unichar)char_ __attribute__((swift_name("times(char:)")));
+- (SpaydkmpKotlinByteArray *)toByteArray __attribute__((swift_name("toByteArray()")));
+- (SpaydkmpBignumModularBigInteger *)toModularBigIntegerModulo:(SpaydkmpBignumBigInteger *)modulo __attribute__((swift_name("toModularBigInteger(modulo:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+- (NSString *)toStringBase:(int32_t)base __attribute__((swift_name("toString(base:)")));
+- (id)toUByteArray __attribute__((swift_name("toUByteArray()")));
+- (uint8_t)ubyteValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("ubyteValue(exactRequired:)")));
+- (uint32_t)uintValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("uintValue(exactRequired:)")));
+- (uint64_t)ulongValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("ulongValue(exactRequired:)")));
+- (SpaydkmpBignumBigInteger *)unaryMinus __attribute__((swift_name("unaryMinus()")));
+- (uint16_t)ushortValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("ushortValue(exactRequired:)")));
+- (SpaydkmpBignumBigInteger *)xorOther:(SpaydkmpBignumBigInteger *)other __attribute__((swift_name("xor(other:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumRoundingMode")))
+@interface SpaydkmpBignumRoundingMode : SpaydkmpKotlinEnum<SpaydkmpBignumRoundingMode *>
+@property (class, readonly) SpaydkmpBignumRoundingMode *floor __attribute__((swift_name("floor")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *ceiling __attribute__((swift_name("ceiling")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *awayFromZero __attribute__((swift_name("awayFromZero")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *towardsZero __attribute__((swift_name("towardsZero")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *none __attribute__((swift_name("none")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *roundHalfAwayFromZero __attribute__((swift_name("roundHalfAwayFromZero")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *roundHalfTowardsZero __attribute__((swift_name("roundHalfTowardsZero")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *roundHalfCeiling __attribute__((swift_name("roundHalfCeiling")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *roundHalfFloor __attribute__((swift_name("roundHalfFloor")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *roundHalfToEven __attribute__((swift_name("roundHalfToEven")));
+@property (class, readonly) SpaydkmpBignumRoundingMode *roundHalfToOdd __attribute__((swift_name("roundHalfToOdd")));
+@property (class, readonly) NSArray<SpaydkmpBignumRoundingMode *> *entries __attribute__((swift_name("entries")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (SpaydkmpKotlinArray<SpaydkmpBignumRoundingMode *> *)values __attribute__((swift_name("values()")));
+@end
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Kotlinx_datetimeMonth")))
 @interface SpaydkmpKotlinx_datetimeMonth : SpaydkmpKotlinEnum<SpaydkmpKotlinx_datetimeMonth *>
@@ -1282,6 +1598,188 @@ __attribute__((swift_name("Kotlinx_datetimeMonthNames")))
 - (NSString *)description __attribute__((swift_name("description()")));
 @end
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumDecimalMode.Companion")))
+@interface SpaydkmpBignumDecimalModeCompanion : SpaydkmpBase
+@property (class, readonly, getter=shared) SpaydkmpBignumDecimalModeCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) SpaydkmpBignumDecimalMode *DEFAULT __attribute__((swift_name("DEFAULT")));
+@property (readonly) SpaydkmpBignumDecimalMode *US_CURRENCY __attribute__((swift_name("US_CURRENCY")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinByteArray")))
+@interface SpaydkmpKotlinByteArray : SpaydkmpBase
+@property (readonly) int32_t size __attribute__((swift_name("size")));
++ (instancetype)arrayWithSize:(int32_t)size __attribute__((swift_name("init(size:)")));
++ (instancetype)arrayWithSize:(int32_t)size init:(SpaydkmpByte *(^)(SpaydkmpInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (int8_t)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (SpaydkmpKotlinByteIterator *)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(int8_t)value __attribute__((swift_name("set(index:value:)")));
+@end
+
+__attribute__((swift_name("BignumBigNumberUtil")))
+@protocol SpaydkmpBignumBigNumberUtil
+@required
+- (id _Nullable)maxFirst:(id _Nullable)first second:(id _Nullable)second __attribute__((swift_name("max(first:second:)")));
+- (id _Nullable)minFirst:(id _Nullable)first second:(id _Nullable)second __attribute__((swift_name("min(first:second:)")));
+@end
+
+__attribute__((swift_name("BignumByteArrayDeserializable")))
+@protocol SpaydkmpBignumByteArrayDeserializable
+@required
+- (id<SpaydkmpBignumBigNumber>)fromByteArraySource:(SpaydkmpKotlinByteArray *)source sign:(SpaydkmpBignumSign *)sign __attribute__((swift_name("fromByteArray(source:sign:)")));
+- (id<SpaydkmpBignumBigNumber>)fromUByteArraySource:(id)source sign:(SpaydkmpBignumSign *)sign __attribute__((swift_name("fromUByteArray(source:sign:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumBigInteger.Companion")))
+@interface SpaydkmpBignumBigIntegerCompanion : SpaydkmpBase <SpaydkmpBignumBigNumberCreator, SpaydkmpBignumBigNumberUtil, SpaydkmpBignumByteArrayDeserializable>
+@property (class, readonly, getter=shared) SpaydkmpBignumBigIntegerCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) double LOG_10_OF_2 __attribute__((swift_name("LOG_10_OF_2")));
+@property (readonly) SpaydkmpBignumBigInteger *ONE __attribute__((swift_name("ONE")));
+@property (readonly) SpaydkmpBignumBigInteger *TEN __attribute__((swift_name("TEN")));
+@property (readonly) SpaydkmpBignumBigInteger *TWO __attribute__((swift_name("TWO")));
+@property (readonly) SpaydkmpBignumBigInteger *ZERO __attribute__((swift_name("ZERO")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (SpaydkmpBignumBigInteger *)createFromWordArrayWordArray:(id)wordArray requestedSign:(SpaydkmpBignumSign *)requestedSign __attribute__((swift_name("createFromWordArray(wordArray:requestedSign:)")));
+- (SpaydkmpBignumBigInteger *)fromBigIntegerBigInteger:(SpaydkmpBignumBigInteger *)bigInteger __attribute__((swift_name("fromBigInteger(bigInteger:)")));
+- (SpaydkmpBignumBigInteger *)fromByteByte:(int8_t)byte __attribute__((swift_name("fromByte(byte:)")));
+- (SpaydkmpBignumBigInteger *)fromByteArraySource:(SpaydkmpKotlinByteArray *)source sign:(SpaydkmpBignumSign *)sign __attribute__((swift_name("fromByteArray(source:sign:)")));
+- (SpaydkmpBignumBigInteger *)fromIntInt:(int32_t)int_ __attribute__((swift_name("fromInt(int:)")));
+- (SpaydkmpBignumBigInteger *)fromLongLong:(int64_t)long_ __attribute__((swift_name("fromLong(long:)")));
+- (SpaydkmpBignumBigInteger *)fromShortShort:(int16_t)short_ __attribute__((swift_name("fromShort(short:)")));
+- (SpaydkmpBignumBigInteger *)fromUByteUByte:(uint8_t)uByte __attribute__((swift_name("fromUByte(uByte:)")));
+- (SpaydkmpBignumBigInteger *)fromUByteArraySource:(id)source sign:(SpaydkmpBignumSign *)sign __attribute__((swift_name("fromUByteArray(source:sign:)")));
+- (SpaydkmpBignumBigInteger *)fromUIntUInt:(uint32_t)uInt __attribute__((swift_name("fromUInt(uInt:)")));
+- (SpaydkmpBignumBigInteger *)fromULongULong:(uint64_t)uLong __attribute__((swift_name("fromULong(uLong:)")));
+- (SpaydkmpBignumBigInteger *)fromUShortUShort:(uint16_t)uShort __attribute__((swift_name("fromUShort(uShort:)")));
+- (SpaydkmpBignumBigInteger *)maxFirst:(SpaydkmpBignumBigInteger *)first second:(SpaydkmpBignumBigInteger *)second __attribute__((swift_name("max(first:second:)")));
+- (SpaydkmpBignumBigInteger *)minFirst:(SpaydkmpBignumBigInteger *)first second:(SpaydkmpBignumBigInteger *)second __attribute__((swift_name("min(first:second:)")));
+- (SpaydkmpBignumBigInteger *)parseStringString:(NSString *)string base:(int32_t)base __attribute__((swift_name("parseString(string:base:)")));
+- (SpaydkmpBignumBigInteger *)tryFromDoubleDouble:(double)double_ exactRequired:(BOOL)exactRequired __attribute__((swift_name("tryFromDouble(double:exactRequired:)")));
+- (SpaydkmpBignumBigInteger *)tryFromFloatFloat:(float)float_ exactRequired:(BOOL)exactRequired __attribute__((swift_name("tryFromFloat(float:exactRequired:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumBigInteger.QuotientAndRemainder")))
+@interface SpaydkmpBignumBigIntegerQuotientAndRemainder : SpaydkmpBase
+@property (readonly) SpaydkmpBignumBigInteger *quotient __attribute__((swift_name("quotient")));
+@property (readonly) SpaydkmpBignumBigInteger *remainder __attribute__((swift_name("remainder")));
+- (instancetype)initWithQuotient:(SpaydkmpBignumBigInteger *)quotient remainder:(SpaydkmpBignumBigInteger *)remainder __attribute__((swift_name("init(quotient:remainder:)"))) __attribute__((objc_designated_initializer));
+- (SpaydkmpBignumBigIntegerQuotientAndRemainder *)doCopyQuotient:(SpaydkmpBignumBigInteger *)quotient remainder:(SpaydkmpBignumBigInteger *)remainder __attribute__((swift_name("doCopy(quotient:remainder:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumSign")))
+@interface SpaydkmpBignumSign : SpaydkmpKotlinEnum<SpaydkmpBignumSign *>
+@property (class, readonly) SpaydkmpBignumSign *positive __attribute__((swift_name("positive")));
+@property (class, readonly) SpaydkmpBignumSign *negative __attribute__((swift_name("negative")));
+@property (class, readonly) SpaydkmpBignumSign *zero __attribute__((swift_name("zero")));
+@property (class, readonly) NSArray<SpaydkmpBignumSign *> *entries __attribute__((swift_name("entries")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (SpaydkmpKotlinArray<SpaydkmpBignumSign *> *)values __attribute__((swift_name("values()")));
+- (SpaydkmpBignumSign *)not __attribute__((swift_name("not()")));
+- (int32_t)toInt __attribute__((swift_name("toInt()")));
+@end
+
+__attribute__((swift_name("KotlinClosedRange")))
+@protocol SpaydkmpKotlinClosedRange
+@required
+- (BOOL)containsValue:(id)value __attribute__((swift_name("contains(value:)")));
+- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+@property (readonly) id endInclusive __attribute__((swift_name("endInclusive")));
+@property (readonly) id start __attribute__((swift_name("start")));
+@end
+
+__attribute__((swift_name("KotlinIterable")))
+@protocol SpaydkmpKotlinIterable
+@required
+- (id<SpaydkmpKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumBigInteger.BigIntegerRange")))
+@interface SpaydkmpBignumBigIntegerBigIntegerRange : SpaydkmpBase <SpaydkmpKotlinClosedRange, SpaydkmpKotlinIterable>
+@property (readonly) SpaydkmpBignumBigInteger *endInclusive __attribute__((swift_name("endInclusive")));
+@property (readonly) SpaydkmpBignumBigInteger *start __attribute__((swift_name("start")));
+- (instancetype)initWithStart:(SpaydkmpBignumBigInteger *)start endInclusive:(SpaydkmpBignumBigInteger *)endInclusive __attribute__((swift_name("init(start:endInclusive:)"))) __attribute__((objc_designated_initializer));
+- (id<SpaydkmpKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumBigInteger.SqareRootAndRemainder")))
+@interface SpaydkmpBignumBigIntegerSqareRootAndRemainder : SpaydkmpBase
+@property (readonly) SpaydkmpBignumBigInteger *remainder __attribute__((swift_name("remainder")));
+@property (readonly) SpaydkmpBignumBigInteger *squareRoot __attribute__((swift_name("squareRoot")));
+- (instancetype)initWithSquareRoot:(SpaydkmpBignumBigInteger *)squareRoot remainder:(SpaydkmpBignumBigInteger *)remainder __attribute__((swift_name("init(squareRoot:remainder:)"))) __attribute__((objc_designated_initializer));
+- (SpaydkmpBignumBigIntegerSqareRootAndRemainder *)doCopySquareRoot:(SpaydkmpBignumBigInteger *)squareRoot remainder:(SpaydkmpBignumBigInteger *)remainder __attribute__((swift_name("doCopy(squareRoot:remainder:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumModularBigInteger")))
+@interface SpaydkmpBignumModularBigInteger : SpaydkmpBase <SpaydkmpBignumBigNumber, SpaydkmpBignumByteArraySerializable>
+@property (class, readonly, getter=companion) SpaydkmpBignumModularBigIntegerCompanion *companion __attribute__((swift_name("companion")));
+@property (readonly) SpaydkmpBignumBigInteger *modulus __attribute__((swift_name("modulus")));
+@property (readonly) SpaydkmpBignumBigInteger *residue __attribute__((swift_name("residue")));
+- (SpaydkmpBignumModularBigInteger *)abs __attribute__((swift_name("abs()")));
+- (SpaydkmpBignumModularBigInteger *)addOther:(SpaydkmpBignumModularBigInteger *)other __attribute__((swift_name("add(other:)")));
+- (int8_t)byteValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("byteValue(exactRequired:)")));
+- (int32_t)compareOther:(SpaydkmpBignumModularBigInteger *)other __attribute__((swift_name("compare(other:)")));
+- (int32_t)compareToOther_:(id)other __attribute__((swift_name("compareTo(other_:)")));
+- (SpaydkmpBignumModularBigInteger *)divideOther:(SpaydkmpBignumModularBigInteger *)other __attribute__((swift_name("divide(other:)")));
+- (SpaydkmpKotlinPair<SpaydkmpBignumModularBigInteger *, SpaydkmpBignumModularBigInteger *> *)divideAndRemainderOther:(SpaydkmpBignumModularBigInteger *)other __attribute__((swift_name("divideAndRemainder(other:)")));
+- (SpaydkmpBignumModularQuotientAndRemainder *)divremOther:(SpaydkmpBignumModularBigInteger *)other __attribute__((swift_name("divrem(other:)")));
+- (double)doubleValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("doubleValue(exactRequired:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (float)floatValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("floatValue(exactRequired:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)getCreator __attribute__((swift_name("getCreator()")));
+- (SpaydkmpBignumModularBigInteger *)getInstance __attribute__((swift_name("getInstance()")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (int32_t)intValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("intValue(exactRequired:)")));
+- (SpaydkmpBignumModularBigInteger *)inverse __attribute__((swift_name("inverse()")));
+- (BOOL)isZero __attribute__((swift_name("isZero()")));
+- (int64_t)longValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("longValue(exactRequired:)")));
+- (SpaydkmpBignumModularBigInteger *)multiplyOther:(SpaydkmpBignumModularBigInteger *)other __attribute__((swift_name("multiply(other:)")));
+- (SpaydkmpBignumModularBigInteger *)negate __attribute__((swift_name("negate()")));
+- (int64_t)numberOfDecimalDigits __attribute__((swift_name("numberOfDecimalDigits()")));
+- (SpaydkmpBignumModularBigInteger *)powExponent__:(SpaydkmpBignumBigInteger *)exponent __attribute__((swift_name("pow(exponent__:)")));
+- (SpaydkmpBignumModularBigInteger *)powExponent___:(SpaydkmpBignumModularBigInteger *)exponent __attribute__((swift_name("pow(exponent___:)")));
+- (SpaydkmpBignumModularBigInteger *)powExponent:(int32_t)exponent __attribute__((swift_name("pow(exponent:)")));
+- (SpaydkmpBignumModularBigInteger *)powExponent_:(int64_t)exponent __attribute__((swift_name("pow(exponent_:)")));
+- (SpaydkmpBignumModularBigInteger *)remOther:(SpaydkmpBignumModularBigInteger *)other __attribute__((swift_name("rem(other:)")));
+- (SpaydkmpBignumModularBigInteger *)remainderOther:(SpaydkmpBignumModularBigInteger *)other __attribute__((swift_name("remainder(other:)")));
+- (void)secureOverwrite __attribute__((swift_name("secureOverwrite()")));
+- (int16_t)shortValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("shortValue(exactRequired:)")));
+- (int32_t)signum __attribute__((swift_name("signum()")));
+- (SpaydkmpBignumModularBigInteger *)subtractOther:(SpaydkmpBignumModularBigInteger *)other __attribute__((swift_name("subtract(other:)")));
+- (SpaydkmpBignumBigInteger *)toBigInteger __attribute__((swift_name("toBigInteger()")));
+- (SpaydkmpKotlinByteArray *)toByteArray __attribute__((swift_name("toByteArray()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+- (NSString *)toStringBase:(int32_t)base __attribute__((swift_name("toString(base:)")));
+- (NSString *)toStringWithModuloBase:(int32_t)base __attribute__((swift_name("toStringWithModulo(base:)")));
+- (id)toUByteArray __attribute__((swift_name("toUByteArray()")));
+- (uint8_t)ubyteValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("ubyteValue(exactRequired:)")));
+- (uint32_t)uintValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("uintValue(exactRequired:)")));
+- (uint64_t)ulongValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("ulongValue(exactRequired:)")));
+- (SpaydkmpBignumModularBigInteger *)unaryMinus __attribute__((swift_name("unaryMinus()")));
+- (uint16_t)ushortValueExactRequired:(BOOL)exactRequired __attribute__((swift_name("ushortValue(exactRequired:)")));
+@end
+
 __attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
 @protocol SpaydkmpKotlinx_serialization_coreSerializationStrategy
 @required
@@ -1329,6 +1827,44 @@ __attribute__((swift_name("Kotlinx_datetimeMonthNames.Companion")))
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
+@end
+
+__attribute__((swift_name("KotlinByteIterator")))
+@interface SpaydkmpKotlinByteIterator : SpaydkmpBase <SpaydkmpKotlinIterator>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (SpaydkmpByte *)next __attribute__((swift_name("next()")));
+- (int8_t)nextByte __attribute__((swift_name("nextByte()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumModularBigInteger.Companion")))
+@interface SpaydkmpBignumModularBigIntegerCompanion : SpaydkmpBase
+@property (class, readonly, getter=shared) SpaydkmpBignumModularBigIntegerCompanion *shared __attribute__((swift_name("shared")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+- (id<SpaydkmpBignumBigNumberCreator>)creatorForModuloModulo:(SpaydkmpBignumBigInteger *)modulo __attribute__((swift_name("creatorForModulo(modulo:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)creatorForModuloModulo_:(int8_t)modulo __attribute__((swift_name("creatorForModulo(modulo_:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)creatorForModuloModulo__:(int32_t)modulo __attribute__((swift_name("creatorForModulo(modulo__:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)creatorForModuloModulo___:(int64_t)modulo __attribute__((swift_name("creatorForModulo(modulo___:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)creatorForModuloModulo____:(int16_t)modulo __attribute__((swift_name("creatorForModulo(modulo____:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)creatorForModuloModulo_____:(uint8_t)modulo __attribute__((swift_name("creatorForModulo(modulo_____:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)creatorForModuloModulo______:(uint32_t)modulo __attribute__((swift_name("creatorForModulo(modulo______:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)creatorForModuloModulo_______:(uint64_t)modulo __attribute__((swift_name("creatorForModulo(modulo_______:)")));
+- (id<SpaydkmpBignumBigNumberCreator>)creatorForModuloModulo________:(uint16_t)modulo __attribute__((swift_name("creatorForModulo(modulo________:)")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BignumModularQuotientAndRemainder")))
+@interface SpaydkmpBignumModularQuotientAndRemainder : SpaydkmpBase
+@property (readonly) SpaydkmpBignumModularBigInteger *quotient __attribute__((swift_name("quotient")));
+@property (readonly) SpaydkmpBignumModularBigInteger *remainder __attribute__((swift_name("remainder")));
+- (instancetype)initWithQuotient:(SpaydkmpBignumModularBigInteger *)quotient remainder:(SpaydkmpBignumModularBigInteger *)remainder __attribute__((swift_name("init(quotient:remainder:)"))) __attribute__((objc_designated_initializer));
+- (SpaydkmpBignumModularQuotientAndRemainder *)doCopyQuotient:(SpaydkmpBignumModularBigInteger *)quotient remainder:(SpaydkmpBignumModularBigInteger *)remainder __attribute__((swift_name("doCopy(quotient:remainder:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
 @end
 
 __attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
